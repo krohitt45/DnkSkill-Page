@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,13 +7,13 @@
   <title>DNK SKILL - Start Learning Now</title>
 
   <!-- External CSS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- External JS (Tailwind Config + App Logic) -->
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 
   <!-- AOS Animations CSS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -34,9 +34,11 @@
       </a>
       <div class="hidden md:flex items-center gap-8">
         <a href="#home" class="text-primary hover:text-primary transition-colors font-medium">Home</a>
-        <a href="training.html" class="text-foreground hover:text-primary transition-colors font-medium">Training</a>
-        <a href="courses.html" class="text-foreground hover:text-primary transition-colors font-medium">Courses</a>
-        <a href="about.html" class="text-foreground hover:text-primary transition-colors font-medium">About</a>
+        <a href="training/index.html"
+          class="text-foreground hover:text-primary transition-colors font-medium">Training</a>
+        <a href="courses/index.html"
+          class="text-foreground hover:text-primary transition-colors font-medium">Courses</a>
+        <a href="about/index.html" class="text-foreground hover:text-primary transition-colors font-medium">About</a>
         <a href="#enroll"
           class="bg-primary text-primary-foreground px-6 py-2.5 rounded-lg font-semibold hover:opacity-90 transition-opacity">
           Start Learning &gt;
@@ -49,9 +51,9 @@
     </div>
     <div id="mobile-menu" class="hidden md:hidden border-t border-border px-4 pb-4 flex-col gap-3">
       <a href="#home" class="py-2 text-primary font-medium mobile-link">Home</a>
-      <a href="training.html" class="py-2 text-foreground font-medium mobile-link">Training</a>
-      <a href="courses.html" class="py-2 text-foreground font-medium mobile-link">Courses</a>
-      <a href="about.html" class="py-2 text-foreground font-medium mobile-link">About</a>
+      <a href="training/index.html" class="py-2 text-foreground font-medium mobile-link">Training</a>
+      <a href="courses/index.html" class="py-2 text-foreground font-medium mobile-link">Courses</a>
+      <a href="about/index.html" class="py-2 text-foreground font-medium mobile-link">About</a>
       <a href="#enroll"
         class="bg-primary text-primary-foreground px-6 py-2.5 rounded-lg font-semibold text-center mobile-link">
         Start Learning &gt;
@@ -115,1090 +117,1498 @@
         </div>
       </div>
       <div class="flex justify-center" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="200">
-        <img src="image.png" alt="Developer working"
+        <img src="images/image.png" alt="Developer working"
           class="max-w-full h-auto max-h-[400px] object-contain animate-float drop-shadow-xl"
-          onerror="this.src='https://placehold.co/600x400?text=Hero+Image'" />
+          onerror="this.onerror=null; this.src='https://placehold.co/600x400?text=DNK+Skills'" />
       </div>
     </div>
   </section>
+ 
+n>
 
-  <!-- CoursesSection -->
-  <section id="courses" class="py-16 bg-background">
-    <div class="max-w-7xl mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl font-bold text-center text-foreground">
-        <span class="text-primary">Industrial</span> Training Programs
-      </h2>
-      <p class="mt-3 text-center text-muted-foreground max-w-xl mx-auto">
-        Industry-focused training programs designed to make you job-ready and help you crack placements with real-world
-        skills.
-      </p>
-      <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10">
 
-        <!-- DSA with C++ Card -->
-        <div class="border border-border rounded-xl p-6 hover:shadow-lg transition-shadow bg-card flex flex-col h-full">
-          <div class="flex items-center gap-4 mb-4">
-            <div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center shrink-0">
-              <i data-lucide="code-2" class="text-primary w-6 h-6"></i>
-            </div>
-            <h3 class="font-bold text-[19px] text-[#1f2937] tracking-tight">DSA with C++</h3>
-          </div>
-          <p class="text-sm text-foreground mb-3 leading-relaxed opacity-90 sm:min-h-[72px]">
-            Master Data Structures and Algorithms from scratch using C++. Build problem-solving skills for top tech
-            companies.
-          </p>
-          <ul class="space-y-1.5 mb-1">
-            <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
-              <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
-                stroke-width="2"></i>
-              Beginner to Advanced
-            </li>
-            <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
-              <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
-                stroke-width="2"></i>
-              100+ Problems
-            </li>
-            <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
-              <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
-                stroke-width="2"></i>
-              Live Classes
-            </li>
-            <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
-              <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
-                stroke-width="2"></i>
-              Competitive Programming
-            </li>
-            <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
-              <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
-                stroke-width="2"></i>
-              Interview Prep
-            </li>
-          
-            <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
-              <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
-                stroke-width="2"></i>
-              Placement & Interview Support
-            </li>
-          </ul>
-          <div class="mt-auto flex flex-col justify-end pt-1">
-            <div class="flex items-center justify-between text-muted-foreground text-sm font-medium mb-4">
-              <div class="flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4"></i> 8 Week</div>
-              <div class="flex items-center gap-1.5 text-primary"><i data-lucide="award" class="w-4 h-4"
-                  fill="currentColor"></i> Certificate</div>
-            </div>
-            <div class="w-full mt-2">
-              <a href="course-dsa-cpp.html"
-                class="w-full block text-center bg-primary text-primary-foreground py-2 rounded-lg font-bold hover:opacity-90 transition-opacity text-[15px] shadow-sm">
-                Enroll Now
-              </a>
-            </div>
-          </div>
-        </div>
 
-        <!-- Web Development Card -->
-        <div class="border border-border rounded-xl p-6 hover:shadow-lg transition-shadow bg-card flex flex-col h-full">
-          <div class="flex items-center gap-4 mb-4">
-            <div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center shrink-0">
-              <i data-lucide="monitor" class="text-primary w-6 h-6"></i>
-            </div>
-            <h3 class="font-bold text-[19px] text-[#1f2937] tracking-tight">Web Development</h3>
-          </div>
-          <p class="text-sm text-foreground mb-3 leading-relaxed opacity-90 sm:min-h-[72px]">
-            Master full-stack development with HTML, CSS, JavaScript, React, Node.js, and databases. Build responsive
-            websites and web applications.
-          </p>
-          <ul class="space-y-1.5 mb-1">
-            <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
-              <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
-                stroke-width="2"></i>
-              HTML, CSS, JavaScript
-            </li>
-            <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
-              <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
-                stroke-width="2"></i>
-              Git and GitHub
-            </li>
-            <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
-              <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
-                stroke-width="2"></i>
-              Nodejs, Expressjs, MongoDB
-            </li>
-            <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
-              <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
-                stroke-width="2"></i>
-              Reactjs
-            </li>
-            <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
-              <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
-                stroke-width="2"></i>
-              Deployment
-            </li>
-          
-            <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
-              <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
-                stroke-width="2"></i>
-              Placement & Interview Support
-            </li>
-          </ul>
-          <div class="mt-auto flex flex-col justify-end pt-1">
-            <div class="flex items-center justify-between text-muted-foreground text-sm font-medium mb-4">
-              <div class="flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4"></i> 8 Week</div>
-              <div class="flex items-center gap-1.5 text-primary"><i data-lucide="award" class="w-4 h-4"
-                  fill="currentColor"></i> Certificate</div>
-            </div>
-            <div class="w-full mt-2">
-              <a href="course-web-dev.html"
-                class="w-full block text-center bg-primary text-primary-foreground py-2 rounded-lg font-bold hover:opacity-90 transition-opacity text-[15px] shadow-sm">
-                Enroll Now
-              </a>
-            </div>
-          </div>
-        </div>
 
-        <!-- App Development Card -->
-        <div class="border border-border rounded-xl p-6 hover:shadow-lg transition-shadow bg-card flex flex-col h-full">
-          <div class="flex items-center gap-4 mb-4">
-            <div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center shrink-0">
-              <i data-lucide="smartphone" class="text-primary w-6 h-6"></i>
-            </div>
-            <h3 class="font-bold text-[19px] text-[#1f2937] tracking-tight">App Development</h3>
-          </div>
-          <p class="text-sm text-foreground mb-3 leading-relaxed opacity-90 sm:min-h-[72px]">
-            Build cross-platform mobile apps with Flutter and React Native. Learn UI/UX principles, APIs, and publishing
-            to app stores.
-          </p>
-          <ul class="space-y-1.5 mb-1">
-            <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
-              <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
-                stroke-width="2"></i>
-              JavaScript, TypeScript
-            </li>
-            <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
-              <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
-                stroke-width="2"></i>
-              Git and GitHub
-            </li>
-            <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
-              <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
-                stroke-width="2"></i>
-              Expo, React Native CLI
-            </li>
-            <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
-              <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
-                stroke-width="2"></i>
-              React Navigation, Redux
-            </li>
-            <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
-              <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
-                stroke-width="2"></i>
-              Build, Test, Deploy
-            </li>
-          
-            <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
-              <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
-                stroke-width="2"></i>
-              Placement & Interview Support
-            </li>
-          </ul>
-          <div class="mt-auto flex flex-col justify-end pt-1">
-            <div class="flex items-center justify-between text-muted-foreground text-sm font-medium mb-4">
-              <div class="flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4"></i> 8 Week</div>
-              <div class="flex items-center gap-1.5 text-primary"><i data-lucide="award" class="w-4 h-4"
-                  fill="currentColor"></i> Certificate</div>
-            </div>
-            <div class="w-full mt-2">
-              <a href="course-app-dev.html"
-                class="w-full block text-center bg-primary text-primary-foreground py-2 rounded-lg font-bold hover:opacity-90 transition-opacity text-[15px] shadow-sm">
-                Enroll Now
-              </a>
-            </div>
-          </div>
-        </div>
 
-        <!-- Data Science Card -->
-        <div class="border border-border rounded-xl p-6 hover:shadow-lg transition-shadow bg-card flex flex-col h-full">
-          <div class="flex items-center gap-4 mb-4">
-            <div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center shrink-0">
-              <i data-lucide="bar-chart" class="text-primary w-6 h-6"></i>
-            </div>
-            <h3 class="font-bold text-[19px] text-[#1f2937] tracking-tight">Data Science</h3>
-          </div>
-          <p class="text-sm text-foreground mb-3 leading-relaxed opacity-90 sm:min-h-[72px]">
-            Learn to analyze data, build predictive models, and extract actionable insights. Master Python, Pandas, and
-            SQL.
-          </p>
-          <ul class="space-y-1.5 mb-1">
-            <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
-              <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
-                stroke-width="2"></i>
-              Python & Libraries
-            </li>
-            <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
-              <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
-                stroke-width="2"></i>
-              Data Visualization
-            </li>
-            <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
-              <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
-                stroke-width="2"></i>
-              SQL for Data Science
-            </li>
-            <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
-              <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
-                stroke-width="2"></i>
-              Statistical Analysis
-            </li>
-            <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
-              <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
-                stroke-width="2"></i>
-              Capstone Project
-            </li>
-          
-            <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
-              <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
-                stroke-width="2"></i>
-              Placement & Interview Support
-            </li>
-          </ul>
-          <div class="mt-auto flex flex-col justify-end pt-1">
-            <div class="flex items-center justify-between text-muted-foreground text-sm font-medium mb-4">
-              <div class="flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4"></i> 8 Week</div>
-              <div class="flex items-center gap-1.5 text-primary"><i data-lucide="award" class="w-4 h-4"
-                  fill="currentColor"></i> Certificate</div>
-            </div>
-            <div class="w-full mt-2">
-              <a href="course-data-science.html"
-                class="w-full block text-center bg-primary text-primary-foreground py-2 rounded-lg font-bold hover:opacity-90 transition-opacity text-[15px] shadow-sm">
-                Enroll Now
-              </a>
-            </div>
-          </div>
-        </div>
 
-        <!-- DSA with Java Card -->
-        <div class="border border-border rounded-xl p-6 hover:shadow-lg transition-shadow bg-card flex flex-col h-full">
-          <div class="flex items-center gap-4 mb-4">
-            <div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center shrink-0">
-              <i data-lucide="coffee" class="text-primary w-6 h-6"></i>
-            </div>
-            <h3 class="font-bold text-[19px] text-[#1f2937] tracking-tight">DSA with Java</h3>
-          </div>
-          <p class="text-sm text-foreground mb-3 leading-relaxed opacity-90 sm:min-h-[72px]">
-            Master Data Structures and Algorithms using Java. Essential for cracking interviews at top product-based
-            companies.
-          </p>
-          <ul class="space-y-1.5 mb-1">
-            <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
-              <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
-                stroke-width="2"></i>
-              Core Java Concepts
-            </li>
-            <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
-              <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
-                stroke-width="2"></i>
-              Collections Framework
-            </li>
-            <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
-              <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
-                stroke-width="2"></i>
-              Graph & Tree Algorithms
-            </li>
-            <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
-              <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
-                stroke-width="2"></i>
-              Dynamic Programming
-            </li>
-            <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
-              <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
-                stroke-width="2"></i>
-              Mock Interviews
-            </li>
-          
-            <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
-              <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
-                stroke-width="2"></i>
-              Placement & Interview Support
-            </li>
-          </ul>
-          <div class="mt-auto flex flex-col justify-end pt-1">
-            <div class="flex items-center justify-between text-muted-foreground text-sm font-medium mb-4">
-              <div class="flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4"></i> 8 Week</div>
-              <div class="flex items-center gap-1.5 text-primary"><i data-lucide="award" class="w-4 h-4"
-                  fill="currentColor"></i> Certificate</div>
-            </div>
-            <div class="w-full mt-2">
-              <a href="course-dsa-java.html"
-                class="w-full block text-center bg-primary text-primary-foreground py-2 rounded-lg font-bold hover:opacity-90 transition-opacity text-[15px] shadow-sm">
-                Enroll Now
-              </a>
-            </div>
-          </div>
-        </div>
 
-        <!-- AI / ML Card -->
-        <div class="border border-border rounded-xl p-6 hover:shadow-lg transition-shadow bg-card flex flex-col h-full">
-          <div class="flex items-center gap-4 mb-4">
-            <div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center shrink-0">
-              <i data-lucide="brain" class="text-primary w-6 h-6"></i>
-            </div>
-            <h3 class="font-bold text-[19px] text-[#1f2937] tracking-tight">AI / ML</h3>
-          </div>
-          <p class="text-sm text-foreground mb-6 leading-relaxed opacity-90">
-            Dive into Artificial Intelligence and Machine Learning. Build neural networks and real-world AI
-            applications.
-          </p>
-          <ul class="space-y-1.5 mb-1">
-            <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
-              <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
-                stroke-width="2"></i>
-              Neural Networks & Deep Learning
-            </li>
-            <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
-              <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
-                stroke-width="2"></i>
-              TensorFlow & PyTorch
-            </li>
-            <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
-              <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
-                stroke-width="2"></i>
-              Computer Vision Basics
-            </li>
-            <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
-              <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
-                stroke-width="2"></i>
-              Natural Language Processing
-            </li>
-            <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
-              <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
-                stroke-width="2"></i>
-              Real-World Case Studies
-            </li>
-          
-            <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
-              <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
-                stroke-width="2"></i>
-              Placement & Interview Support
-            </li>
-          </ul>
-          <div class="mt-auto flex flex-col justify-end pt-3">
-            <div class="flex items-center justify-between text-muted-foreground text-sm font-medium mb-4">
-              <div class="flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4"></i> 8 Week</div>
-              <div class="flex items-center gap-1.5 text-primary"><i data-lucide="award" class="w-4 h-4"
-                  fill="currentColor"></i> Certificate</div>
-            </div>
-            <div class="w-full mt-2">
-              <a href="course-ai-ml.html"
-                class="w-full block text-center bg-primary text-primary-foreground py-2 rounded-lg font-bold hover:opacity-90 transition-opacity text-[15px] shadow-sm">
-                Enroll Now
-              </a>
-            </div>
-          </div>
-        </div>
 
-      </div>
-    </div>
-  </section>
 
-  <!-- LMS Showcase Section -->
-  <section id="lms-showcase" class="py-16 md:py-24 bg-background relative overflow-hidden">
-    <!-- Decorative background elements -->
-    <div class="absolute top-0 inset-x-0 h-64 bg-gradient-to-b from-primary/5 to-transparent z-0"></div>
-    <div class="absolute -top-24 -right-24 w-96 h-96 bg-primary/10 rounded-full blur-3xl z-0"></div>
-    <div class="absolute top-48 -left-24 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl z-0"></div>
-
-    <div class="max-w-7xl mx-auto px-4 relative z-10">
-      <div class="text-center max-w-3xl mx-auto mb-12 lg:mb-16" data-aos="fade-up" data-aos-duration="800">
-        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 text-primary font-medium text-sm mb-4 border border-primary/20">
-          <i data-lucide="sparkles" class="w-4 h-4"></i>
-          Free 1-Year Access Included
-        </div>
-        <h2 class="text-3xl md:text-5xl font-bold text-foreground mb-4 tracking-tight leading-tight">
-          Experience Our <span class="text-primary text-transparent bg-clip-text bg-gradient-to-r from-primary to-[#ff6b4a]">Premium LMS</span>
+    <!-- CoursesSection -->
+    <section id="courses" class="py-16 bg-background">
+      <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-2xl md:text-3xl font-bold text-center text-foreground">
+          <span class="text-primary">Industrial</span> Training Programs
         </h2>
-        <p class="text-lg text-muted-foreground leading-relaxed">
-          Enroll in any course and unlock complimentary access to our Smart Learning Platform. Track progress, practice coding, and learn seamlessly.
+        <p class="mt-3 text-center text-muted-foreground max-w-xl mx-auto">
+          Industry-focused training programs designed to make you job-ready and help you crack placements with
+          real-world
+          skills.
         </p>
+        <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10">
+
+          <!-- DSA with C++ Card -->
+          <div
+            class="border border-border rounded-xl p-6 hover:shadow-lg transition-shadow bg-card flex flex-col h-full">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center shrink-0">
+                <i data-lucide="code-2" class="text-primary w-6 h-6"></i>
+              </div>
+              <h3 class="font-bold text-[19px] text-[#1f2937] tracking-tight">DSA with C++</h3>
+            </div>
+            <p class="text-sm text-foreground mb-3 leading-relaxed opacity-90 sm:min-h-[72px]">
+              Master Data Structures and Algorithms from scratch using C++. Build problem-solving skills for top tech
+              companies.
+            </p>
+            <ul class="space-y-1.5 mb-1">
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Beginner to Advanced
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                100+ Problems
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Live Classes
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Competitive Programming
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Interview Prep
+              </li>
+
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Placement & Interview Support
+              </li>
+            </ul>
+            <div class="mt-auto flex flex-col justify-end pt-1">
+              <div class="flex items-center justify-between text-muted-foreground text-sm font-medium mb-4">
+                <div class="flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4"></i> 8 Week</div>
+                <div class="flex items-center gap-1.5 text-primary"><i data-lucide="award" class="w-4 h-4"
+                    fill="currentColor"></i> Certificate</div>
+              </div>
+              <div class="w-full mt-2">
+                <a href="course-dsa-cpp.html"
+                  class="w-full block text-center bg-primary text-primary-foreground py-2 rounded-lg font-bold hover:opacity-90 transition-opacity text-[15px] shadow-sm">
+                  Enroll Now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Web Development Card -->
+          <div
+            class="border border-border rounded-xl p-6 hover:shadow-lg transition-shadow bg-card flex flex-col h-full">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center shrink-0">
+                <i data-lucide="monitor" class="text-primary w-6 h-6"></i>
+              </div>
+              <h3 class="font-bold text-[19px] text-[#1f2937] tracking-tight">Web Development</h3>
+            </div>
+            <p class="text-sm text-foreground mb-3 leading-relaxed opacity-90 sm:min-h-[72px]">
+              Master full-stack development with HTML, CSS, JavaScript, React, Node.js, and databases. Build responsive
+              websites and web applications.
+            </p>
+            <ul class="space-y-1.5 mb-1">
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                HTML, CSS, JavaScript
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Git and GitHub
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Nodejs, Expressjs, MongoDB
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Reactjs
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Deployment
+              </li>
+
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Placement & Interview Support
+              </li>
+            </ul>
+            <div class="mt-auto flex flex-col justify-end pt-1">
+              <div class="flex items-center justify-between text-muted-foreground text-sm font-medium mb-4">
+                <div class="flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4"></i> 8 Week</div>
+                <div class="flex items-center gap-1.5 text-primary"><i data-lucide="award" class="w-4 h-4"
+                    fill="currentColor"></i> Certificate</div>
+              </div>
+              <div class="w-full mt-2">
+                <a href="course-web-dev.html"
+                  class="w-full block text-center bg-primary text-primary-foreground py-2 rounded-lg font-bold hover:opacity-90 transition-opacity text-[15px] shadow-sm">
+                  Enroll Now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- App Development Card -->
+          <div
+            class="border border-border rounded-xl p-6 hover:shadow-lg transition-shadow bg-card flex flex-col h-full">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center shrink-0">
+                <i data-lucide="smartphone" class="text-primary w-6 h-6"></i>
+              </div>
+              <h3 class="font-bold text-[19px] text-[#1f2937] tracking-tight">App Development</h3>
+            </div>
+            <p class="text-sm text-foreground mb-3 leading-relaxed opacity-90 sm:min-h-[72px]">
+              Build cross-platform mobile apps with Flutter and React Native. Learn UI/UX principles, APIs, and
+              publishing
+              to app stores.
+            </p>
+            <ul class="space-y-1.5 mb-1">
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                JavaScript, TypeScript
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Git and GitHub
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Expo, React Native CLI
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                React Navigation, Redux
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Build, Test, Deploy
+              </li>
+
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Placement & Interview Support
+              </li>
+            </ul>
+            <div class="mt-auto flex flex-col justify-end pt-1">
+              <div class="flex items-center justify-between text-muted-foreground text-sm font-medium mb-4">
+                <div class="flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4"></i> 8 Week</div>
+                <div class="flex items-center gap-1.5 text-primary"><i data-lucide="award" class="w-4 h-4"
+                    fill="currentColor"></i> Certificate</div>
+              </div>
+              <div class="w-full mt-2">
+                <a href="course-app-dev.html"
+                  class="w-full block text-center bg-primary text-primary-foreground py-2 rounded-lg font-bold hover:opacity-90 transition-opacity text-[15px] shadow-sm">
+                  Enroll Now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Data Science Card -->
+          <div
+            class="border border-border rounded-xl p-6 hover:shadow-lg transition-shadow bg-card flex flex-col h-full">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center shrink-0">
+                <i data-lucide="bar-chart" class="text-primary w-6 h-6"></i>
+              </div>
+              <h3 class="font-bold text-[19px] text-[#1f2937] tracking-tight">Data Science</h3>
+            </div>
+            <p class="text-sm text-foreground mb-3 leading-relaxed opacity-90 sm:min-h-[72px]">
+              Learn to analyze data, build predictive models, and extract actionable insights. Master Python, Pandas,
+              and
+              SQL.
+            </p>
+            <ul class="space-y-1.5 mb-1">
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Python & Libraries
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Data Visualization
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                SQL for Data Science
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Statistical Analysis
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Capstone Project
+              </li>
+
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Placement & Interview Support
+              </li>
+            </ul>
+            <div class="mt-auto flex flex-col justify-end pt-1">
+              <div class="flex items-center justify-between text-muted-foreground text-sm font-medium mb-4">
+                <div class="flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4"></i> 8 Week</div>
+                <div class="flex items-center gap-1.5 text-primary"><i data-lucide="award" class="w-4 h-4"
+                    fill="currentColor"></i> Certificate</div>
+              </div>
+              <div class="w-full mt-2">
+                <a href="course-data-science.html"
+                  class="w-full block text-center bg-primary text-primary-foreground py-2 rounded-lg font-bold hover:opacity-90 transition-opacity text-[15px] shadow-sm">
+                  Enroll Now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- DSA with Java Card -->
+          <div
+            class="border border-border rounded-xl p-6 hover:shadow-lg transition-shadow bg-card flex flex-col h-full">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center shrink-0">
+                <i data-lucide="coffee" class="text-primary w-6 h-6"></i>
+              </div>
+              <h3 class="font-bold text-[19px] text-[#1f2937] tracking-tight">DSA with Java</h3>
+            </div>
+            <p class="text-sm text-foreground mb-3 leading-relaxed opacity-90 sm:min-h-[72px]">
+              Master Data Structures and Algorithms using Java. Essential for cracking interviews at top product-based
+              companies.
+            </p>
+            <ul class="space-y-1.5 mb-1">
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Core Java Concepts
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Collections Framework
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Graph & Tree Algorithms
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Dynamic Programming
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Mock Interviews
+              </li>
+
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Placement & Interview Support
+              </li>
+            </ul>
+            <div class="mt-auto flex flex-col justify-end pt-1">
+              <div class="flex items-center justify-between text-muted-foreground text-sm font-medium mb-4">
+                <div class="flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4"></i> 8 Week</div>
+                <div class="flex items-center gap-1.5 text-primary"><i data-lucide="award" class="w-4 h-4"
+                    fill="currentColor"></i> Certificate</div>
+              </div>
+              <div class="w-full mt-2">
+                <a href="course-dsa-java.html"
+                  class="w-full block text-center bg-primary text-primary-foreground py-2 rounded-lg font-bold hover:opacity-90 transition-opacity text-[15px] shadow-sm">
+                  Enroll Now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI / ML Card -->
+          <div
+            class="border border-border rounded-xl p-6 hover:shadow-lg transition-shadow bg-card flex flex-col h-full">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center shrink-0">
+                <i data-lucide="brain" class="text-primary w-6 h-6"></i>
+              </div>
+              <h3 class="font-bold text-[19px] text-[#1f2937] tracking-tight">AI / ML</h3>
+            </div>
+            <p class="text-sm text-foreground mb-6 leading-relaxed opacity-90">
+              Dive into Artificial Intelligence and Machine Learning. Build neural networks and real-world AI
+              applications.
+            </p>
+            <ul class="space-y-1.5 mb-1">
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Neural Networks & Deep Learning
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                TensorFlow & PyTorch
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Computer Vision Basics
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Natural Language Processing
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Real-World Case Studies
+              </li>
+
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1">
+                <i data-lucide="check" class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;"
+                  stroke-width="2"></i>
+                Placement & Interview Support
+              </li>
+            </ul>
+            <div class="mt-auto flex flex-col justify-end pt-3">
+              <div class="flex items-center justify-between text-muted-foreground text-sm font-medium mb-4">
+                <div class="flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4"></i> 8 Week</div>
+                <div class="flex items-center gap-1.5 text-primary"><i data-lucide="award" class="w-4 h-4"
+                    fill="currentColor"></i> Certificate</div>
+              </div>
+              <div class="w-full mt-2">
+                <a href="course-ai-ml.html"
+                  class="w-full block text-center bg-primary text-primary-foreground py-2 rounded-lg font-bold hover:opacity-90 transition-opacity text-[15px] shadow-sm">
+                  Enroll Now
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
+    </section>
 
-      <!-- Interactive Showcase -->
-      <div class="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center max-w-6xl mx-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-        
-        <!-- Left Panel: Feature Tabs -->
-        <div class="lg:col-span-5 flex flex-col gap-4">
-          
-          <!-- Tab 1 -->
-          <button class="lms-tab overflow-hidden active group relative text-left p-6 rounded-2xl border transition-all duration-300 hover:shadow-md border-primary bg-primary/5 shadow-sm" data-tab="0">
-            <div class="flex items-start gap-4">
-              <div class="w-12 h-12 rounded-full bg-white shadow-sm flex items-center justify-center text-primary shrink-0 transition-colors duration-300">
-                <i data-lucide="layout-dashboard" stroke-width="2.5"></i>
-              </div>
-              <div class="flex-1">
-                <h4 class="font-bold text-lg text-foreground mb-1">Smart Dashboard</h4>
-                <p class="text-sm text-muted-foreground">Track your learning journey and view detailed stats.</p>
-              </div>
-              <!-- Active Arrow indicator -->
-              <i data-lucide="chevron-right" class="text-primary w-5 h-5 opacity-100 transition-opacity self-center lms-arrow"></i>
-            </div>
-            <!-- Progress Bar -->
-            <div class="absolute bottom-0 left-0 h-1 bg-primary/20 w-full"><div class="h-full bg-primary w-0 lms-progress"></div></div>
-          </button>
+    <!-- LMS Showcase Section -->
+    <section id="lms-showcase" class="pt-16 md:pt-24 pb-6 bg-[#f1f8f6] relative overflow-hidden">
+      <!-- Decorative background elements -->
+      <div class="absolute -top-24 -right-24 w-96 h-96 bg-primary/10 rounded-full blur-3xl z-0"></div>
+      <div class="absolute top-48 -left-24 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl z-0"></div>
 
-          <!-- Tab 2 -->
-          <button class="lms-tab overflow-hidden group relative text-left p-6 rounded-2xl border transition-all duration-300 hover:shadow-md border-border bg-card hover:border-primary/50" data-tab="1">
-            <div class="flex items-start gap-4">
-              <div class="w-12 h-12 rounded-full bg-secondary text-primary/70 flex items-center justify-center shrink-0 transition-colors duration-300 group-hover:text-primary">
-                <i data-lucide="list-checks" stroke-width="2.5"></i>
-              </div>
-              <div class="flex-1">
-                <h4 class="font-bold text-lg text-foreground mb-1">1000+ DSA Questions</h4>
-                <p class="text-sm text-muted-foreground">Practice daily and master all topics with our extensive, topic-wise DSA problems.</p>
-              </div>
-              <i data-lucide="chevron-right" class="text-primary w-5 h-5 opacity-0 transition-opacity self-center lms-arrow"></i>
-            </div>
-            <div class="absolute bottom-0 left-0 h-1 bg-primary/20 w-full"><div class="h-full bg-primary w-0 lms-progress"></div></div>
-          </button>
+      <div class="max-w-7xl mx-auto px-4 relative z-10">
+        <div class="text-center max-w-3xl mx-auto mb-12 lg:mb-16" data-aos="fade-up" data-aos-duration="800">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 text-primary font-medium text-sm mb-4 border border-primary/20">
+            <i data-lucide="sparkles" class="w-4 h-4"></i>
+            Free 1-Year Access Included
+          </div>
+          <h2 class="text-3xl md:text-5xl font-bold text-foreground mb-4 tracking-tight leading-tight">
+            Experience Our <span
+              class="text-primary text-transparent bg-clip-text bg-gradient-to-r from-primary to-[#ff6b4a]">Premium
+              LMS</span>
+          </h2>
+          <p class="text-lg text-muted-foreground leading-relaxed">
+            Enroll in any course and unlock complimentary access to our Smart Learning Platform. Track progress,
+            practice coding, and learn seamlessly.
+          </p>
+        </div>
 
-          <!-- Tab 3 -->
-          <button class="lms-tab overflow-hidden group relative text-left p-6 rounded-2xl border transition-all duration-300 hover:shadow-md border-border bg-card hover:border-primary/50" data-tab="2">
-            <div class="flex items-start gap-4">
-              <div class="w-12 h-12 rounded-full bg-secondary text-primary/70 flex items-center justify-center shrink-0 transition-colors duration-300 group-hover:text-primary">
-                <i data-lucide="code-xml" stroke-width="2.5"></i>
-              </div>
-              <div class="flex-1">
-                <h4 class="font-bold text-lg text-foreground mb-1">In-Built Compiler</h4>
-                <p class="text-sm text-muted-foreground">Practice coding instantly in Java, C++, Python & more.</p>
-              </div>
-              <i data-lucide="chevron-right" class="text-primary w-5 h-5 opacity-0 transition-opacity self-center lms-arrow"></i>
-            </div>
-            <div class="absolute bottom-0 left-0 h-1 bg-primary/20 w-full"><div class="h-full bg-primary w-0 lms-progress"></div></div>
-          </button>
+        <!-- Interactive Showcase -->
+        <div class="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center max-w-6xl mx-auto" data-aos="fade-up"
+          data-aos-duration="1000" data-aos-delay="200">
 
-          <!-- Tab 4 -->
-          <button class="lms-tab overflow-hidden group relative text-left p-6 rounded-2xl border transition-all duration-300 hover:shadow-md border-border bg-card hover:border-primary/50" data-tab="3">
-            <div class="flex items-start gap-4">
-              <div class="w-12 h-12 rounded-full bg-secondary text-primary/70 flex items-center justify-center shrink-0 transition-colors duration-300 group-hover:text-primary">
-                <i data-lucide="briefcase" stroke-width="2.5"></i>
+          <!-- Left Panel: Feature Tabs -->
+          <div class="lg:col-span-5 flex flex-col gap-4">
+
+            <!-- Tab 1 -->
+            <button
+              class="lms-tab overflow-hidden active group relative text-left p-6 rounded-2xl border transition-all duration-300 hover:shadow-md border-primary bg-primary/5 shadow-sm"
+              data-tab="0">
+              <div class="flex items-start gap-4">
+                <div
+                  class="w-12 h-12 rounded-full bg-white shadow-sm flex items-center justify-center text-primary shrink-0 transition-colors duration-300">
+                  <i data-lucide="layout-dashboard" stroke-width="2.5"></i>
+                </div>
+                <div class="flex-1">
+                  <h4 class="font-bold text-lg text-foreground mb-1">Smart Dashboard</h4>
+                  <p class="text-sm text-muted-foreground">Track your learning journey and view detailed stats.</p>
+                </div>
+                <!-- Active Arrow indicator -->
+                <i data-lucide="chevron-right"
+                  class="text-primary w-5 h-5 opacity-100 transition-opacity self-center lms-arrow"></i>
               </div>
-              <div class="flex-1">
-                <h4 class="font-bold text-lg text-foreground mb-1">Placement Prep</h4>
-                <p class="text-sm text-muted-foreground">Notes, interview guides, soft skills, DBMS, OS, Networking, System Design, and Core CS.</p>
+              <!-- Progress Bar -->
+              <div class="absolute bottom-0 left-0 h-[2px] bg-primary/10 w-full">
+                <div class="h-full bg-primary/40 w-0 lms-progress"></div>
               </div>
-              <i data-lucide="chevron-right" class="text-primary w-5 h-5 opacity-0 transition-opacity self-center lms-arrow"></i>
+            </button>
+
+            <!-- Tab 2 -->
+            <button
+              class="lms-tab overflow-hidden group relative text-left p-6 rounded-2xl border transition-all duration-300 hover:shadow-md border-border bg-card hover:border-primary/50"
+              data-tab="1">
+              <div class="flex items-start gap-4">
+                <div
+                  class="w-12 h-12 rounded-full bg-secondary text-primary/70 flex items-center justify-center shrink-0 transition-colors duration-300 group-hover:text-primary">
+                  <i data-lucide="list-checks" stroke-width="2.5"></i>
+                </div>
+                <div class="flex-1">
+                  <h4 class="font-bold text-lg text-foreground mb-1">1000+ DSA Questions</h4>
+                  <p class="text-sm text-muted-foreground">Practice daily and master all topics with our extensive,
+                    topic-wise DSA problems.</p>
+                </div>
+                <i data-lucide="chevron-right"
+                  class="text-primary w-5 h-5 opacity-0 transition-opacity self-center lms-arrow"></i>
+              </div>
+              <div class="absolute bottom-0 left-0 h-[2px] bg-primary/10 w-full">
+                <div class="h-full bg-primary/40 w-0 lms-progress"></div>
+              </div>
+            </button>
+
+            <!-- Tab 3 -->
+            <button
+              class="lms-tab overflow-hidden group relative text-left p-6 rounded-2xl border transition-all duration-300 hover:shadow-md border-border bg-card hover:border-primary/50"
+              data-tab="2">
+              <div class="flex items-start gap-4">
+                <div
+                  class="w-12 h-12 rounded-full bg-secondary text-primary/70 flex items-center justify-center shrink-0 transition-colors duration-300 group-hover:text-primary">
+                  <i data-lucide="code-xml" stroke-width="2.5"></i>
+                </div>
+                <div class="flex-1">
+                  <h4 class="font-bold text-lg text-foreground mb-1">In-Built Compiler</h4>
+                  <p class="text-sm text-muted-foreground">Practice coding instantly in Java, C++, Python & more.</p>
+                </div>
+                <i data-lucide="chevron-right"
+                  class="text-primary w-5 h-5 opacity-0 transition-opacity self-center lms-arrow"></i>
+              </div>
+              <div class="absolute bottom-0 left-0 h-[2px] bg-primary/10 w-full">
+                <div class="h-full bg-primary/40 w-0 lms-progress"></div>
+              </div>
+            </button>
+
+            <!-- Tab 4 -->
+            <button
+              class="lms-tab overflow-hidden group relative text-left p-6 rounded-2xl border transition-all duration-300 hover:shadow-md border-border bg-card hover:border-primary/50"
+              data-tab="3">
+              <div class="flex items-start gap-4">
+                <div
+                  class="w-12 h-12 rounded-full bg-secondary text-primary/70 flex items-center justify-center shrink-0 transition-colors duration-300 group-hover:text-primary">
+                  <i data-lucide="briefcase" stroke-width="2.5"></i>
+                </div>
+                <div class="flex-1">
+                  <h4 class="font-bold text-lg text-foreground mb-1">Placement Prep</h4>
+                  <p class="text-sm text-muted-foreground">Notes, interview guides, soft skills, DBMS, OS, Networking,
+                    System Design, and Core CS.</p>
+                </div>
+                <i data-lucide="chevron-right"
+                  class="text-primary w-5 h-5 opacity-0 transition-opacity self-center lms-arrow"></i>
+              </div>
+              <div class="absolute bottom-0 left-0 h-1 bg-primary/20 w-full">
+                <div class="h-full bg-primary w-0 lms-progress"></div>
+              </div>
+            </button>
+
+          </div>
+
+          <!-- Right Panel: Tablet Mockup -->
+          <div class="lg:col-span-7 relative transition-all duration-500">
+
+            <!-- Live Badge -->
+            <div
+              class="absolute -top-3 -right-3 md:-top-5 md:-right-5 z-30 bg-[#1a1a1a] border border-[#333] text-white text-[10px] sm:text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-2 shadow-xl shadow-black/50 animate-[bounce_3s_infinite]">
+              <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+              Live Preview
             </div>
-            <div class="absolute bottom-0 left-0 h-1 bg-primary/20 w-full"><div class="h-full bg-primary w-0 lms-progress"></div></div>
-          </button>
+
+            <!-- iPad Frame -->
+            <div
+              class="relative w-full aspect-[4/3] max-w-3xl mx-auto rounded-[2.5rem] bg-[#1a1a1a] shadow-2xl p-3 border-[6px] border-[#333] ring-1 ring-white/10 flex items-center justify-center overflow-hidden">
+              <!-- Camera dot -->
+              <div class="absolute left-4 top-1/2 -translate-y-1/2 w-2.5 h-2.5 rounded-full bg-black/60 z-20"></div>
+              <!-- Inner screen area -->
+              <div
+                class="relative w-full h-full rounded-[1.8rem] bg-black overflow-hidden z-10 border-[3px] border-black">
+
+                <!-- Images -->
+                <img id="tab-img-0" src="images/lms1.png" alt="Dashboard"
+                  class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-100"
+                  onerror="this.onerror=null; this.src='https://placehold.co/800x600?text=DNK+Skills+Showcase'">
+                <img id="tab-img-1" src="images/lms2.png" alt="My Learning"
+                  class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0"
+                  onerror="this.onerror=null; this.src='https://placehold.co/800x600?text=DNK+Skills+Showcase'">
+                <img id="tab-img-2" src="images/lms3.png" alt="Compiler"
+                  class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0"
+                  onerror="this.onerror=null; this.src='https://placehold.co/800x600?text=DNK+Skills+Showcase'">
+                <img id="tab-img-3" src="images/lms4.png" alt="Placement Prep"
+                  class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0"
+                  onerror="this.onerror=null; this.src='https://placehold.co/800x600?text=DNK+Skills+Showcase'">
+
+              </div>
+            </div>
+
+            <!-- Background decoration for the tablet -->
+            <div
+              class="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] h-[110%] bg-primary/5 blur-3xl rounded-full opacity-50">
+            </div>
+          </div>
 
         </div>
 
-        <!-- Right Panel: Tablet Mockup -->
-        <div class="lg:col-span-7 relative transition-all duration-500">
-          
-          <!-- Live Badge -->
-          <div class="absolute -top-3 -right-3 md:-top-5 md:-right-5 z-30 bg-[#1a1a1a] border border-[#333] text-white text-[10px] sm:text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-2 shadow-xl shadow-black/50 animate-[bounce_3s_infinite]">
-             <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
-             Live Preview
-          </div>
+        <!-- Logic -->
+        <script>
+          document.addEventListener("DOMContentLoaded", () => {
+            const tabs = document.querySelectorAll('.lms-tab');
+            const images = [
+              document.getElementById('tab-img-0'),
+              document.getElementById('tab-img-1'),
+              document.getElementById('tab-img-2'),
+              document.getElementById('tab-img-3')
+            ];
 
-          <!-- iPad Frame -->
-          <div class="relative w-full aspect-[4/3] max-w-3xl mx-auto rounded-[2.5rem] bg-[#1a1a1a] shadow-2xl p-3 border-[6px] border-[#333] ring-1 ring-white/10 flex items-center justify-center overflow-hidden">
-            <!-- Camera dot -->
-            <div class="absolute left-4 top-1/2 -translate-y-1/2 w-2.5 h-2.5 rounded-full bg-black/60 z-20"></div>
-            <!-- Inner screen area -->
-            <div class="relative w-full h-full rounded-[1.8rem] bg-black overflow-hidden z-10 border-[3px] border-black">
-              
-              <!-- Images -->
-              <img id="tab-img-0" src="lms1.png" alt="Dashboard" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-100" onerror="this.src='image.png'">
-              <img id="tab-img-1" src="lms2.png" alt="My Learning" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0" onerror="this.src='image.png'">
-              <img id="tab-img-2" src="lms3.png" alt="Compiler" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0" onerror="this.src='image.png'">
-              <img id="tab-img-3" src="lms4.png" alt="Placement Prep" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0" onerror="this.src='image.png'">
-              
-            </div>
-          </div>
-          
-          <!-- Background decoration for the tablet -->
-          <div class="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] h-[110%] bg-primary/5 blur-3xl rounded-full opacity-50"></div>
-        </div>
+            let currentTab = 0;
+            let autoplayInterval;
 
-      </div>
+            function activateTab(index) {
+              // Remove active state from all
+              tabs.forEach((tab, i) => {
+                const progressBar = tab.querySelector('.lms-progress');
+                if (i === index) {
+                  // Set active
+                  tab.classList.remove('border-border', 'bg-card', 'hover:border-primary/50');
+                  tab.classList.add('border-primary', 'bg-primary/5', 'shadow-sm', 'active');
+                  tab.querySelector('.lms-arrow').classList.remove('opacity-0');
+                  tab.querySelector('.lms-arrow').classList.add('opacity-100');
 
-      <!-- Logic -->
-      <script>
-        document.addEventListener("DOMContentLoaded", () => {
-          const tabs = document.querySelectorAll('.lms-tab');
-          const images = [
-            document.getElementById('tab-img-0'),
-            document.getElementById('tab-img-1'),
-            document.getElementById('tab-img-2'),
-            document.getElementById('tab-img-3')
-          ];
-          
-          let currentTab = 0;
-          let autoplayInterval;
+                  // Active Icon styles
+                  const iconContainer = tab.querySelector('div.rounded-full');
+                  iconContainer.classList.remove('bg-secondary', 'text-primary/70');
+                  iconContainer.classList.add('bg-white', 'text-primary', 'shadow-sm');
 
-          function activateTab(index) {
-            // Remove active state from all
-            tabs.forEach((tab, i) => {
-              const progressBar = tab.querySelector('.lms-progress');
-              if (i === index) {
-                // Set active
-                tab.classList.remove('border-border', 'bg-card', 'hover:border-primary/50');
-                tab.classList.add('border-primary', 'bg-primary/5', 'shadow-sm', 'active');
-                tab.querySelector('.lms-arrow').classList.remove('opacity-0');
-                tab.querySelector('.lms-arrow').classList.add('opacity-100');
-                
-                // Active Icon styles
-                const iconContainer = tab.querySelector('div.rounded-full');
-                iconContainer.classList.remove('bg-secondary', 'text-primary/70');
-                iconContainer.classList.add('bg-white', 'text-primary', 'shadow-sm');
-                
-                // Start progress animation
-                if (progressBar) {
-                  progressBar.style.transition = 'none';
-                  progressBar.style.width = '0%';
-                  void progressBar.offsetWidth; // force reflow
-                  if (autoplayInterval) {
-                    progressBar.style.transition = 'width 4000ms linear';
-                    progressBar.style.width = '100%';
-                  } else {
-                    progressBar.style.transition = 'width 300ms ease';
-                    progressBar.style.width = '100%';
+                  // Start progress animation
+                  if (progressBar) {
+                    progressBar.style.transition = 'none';
+                    progressBar.style.width = '0%';
+                    void progressBar.offsetWidth; // force reflow
+                    if (autoplayInterval) {
+                      progressBar.style.transition = 'width 4000ms linear';
+                      progressBar.style.width = '100%';
+                    } else {
+                      progressBar.style.transition = 'width 300ms ease';
+                      progressBar.style.width = '100%';
+                    }
+                  }
+                } else {
+                  // Set inactive
+                  tab.classList.add('border-border', 'bg-card', 'hover:border-primary/50');
+                  tab.classList.remove('border-primary', 'bg-primary/5', 'shadow-sm', 'active');
+                  tab.querySelector('.lms-arrow').classList.remove('opacity-100');
+                  tab.querySelector('.lms-arrow').classList.add('opacity-0');
+
+                  // Inactive Icon styles
+                  const iconContainer = tab.querySelector('div.rounded-full');
+                  iconContainer.classList.add('bg-secondary', 'text-primary/70');
+                  iconContainer.classList.remove('bg-white', 'text-primary', 'shadow-sm');
+
+                  // Reset progress animation
+                  if (progressBar) {
+                    progressBar.style.transition = 'none';
+                    progressBar.style.width = '0%';
                   }
                 }
-              } else {
-                // Set inactive
-                tab.classList.add('border-border', 'bg-card', 'hover:border-primary/50');
-                tab.classList.remove('border-primary', 'bg-primary/5', 'shadow-sm', 'active');
-                tab.querySelector('.lms-arrow').classList.remove('opacity-100');
-                tab.querySelector('.lms-arrow').classList.add('opacity-0');
-                
-                // Inactive Icon styles
-                const iconContainer = tab.querySelector('div.rounded-full');
-                iconContainer.classList.add('bg-secondary', 'text-primary/70');
-                iconContainer.classList.remove('bg-white', 'text-primary', 'shadow-sm');
-                
-                // Reset progress animation
-                if (progressBar) {
-                  progressBar.style.transition = 'none';
-                  progressBar.style.width = '0%';
+              });
+
+              // Update images
+              images.forEach((img, i) => {
+                if (!img) return;
+                if (i === index) {
+                  img.classList.remove('opacity-0');
+                  img.classList.add('opacity-100');
+                } else {
+                  img.classList.remove('opacity-100');
+                  img.classList.add('opacity-0');
                 }
-              }
+              });
+
+              currentTab = index;
+            }
+
+            // Handle click
+            tabs.forEach((tab, index) => {
+              tab.addEventListener('click', () => {
+                // Stop autoplay on manual interaction
+                clearInterval(autoplayInterval);
+                autoplayInterval = null;
+                activateTab(index);
+              });
             });
 
-            // Update images
-            images.forEach((img, i) => {
-              if(!img) return;
-              if (i === index) {
-                img.classList.remove('opacity-0');
-                img.classList.add('opacity-100');
-              } else {
-                img.classList.remove('opacity-100');
-                img.classList.add('opacity-0');
-              }
-            });
-            
-            currentTab = index;
-          }
+            // Autoplay loop
+            autoplayInterval = setInterval(() => {
+              let nextTab = (currentTab + 1) % tabs.length;
+              activateTab(nextTab);
+            }, 4000); // 4 seconds
 
-          // Handle click
-          tabs.forEach((tab, index) => {
-            tab.addEventListener('click', () => {
-              // Stop autoplay on manual interaction
-              clearInterval(autoplayInterval);
-              autoplayInterval = null;
-              activateTab(index);
-            });
+            // Initialize first tab progress bar
+            activateTab(0);
+
+            // Initialize lucide icons for the newly added elements
+            if (typeof lucide !== 'undefined') lucide.createIcons();
           });
+        </script>
+ 
+        <style>
+          .hide-scrollbar::-webkit-scrollbar { display: none; }
+          .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        </style>
+ 
+        <!-- Clean DNK Skill Learning Hub (Elite White Edition) -->
+        <div class="pt-20 pb-20 bg-[#f1f8f6]">
+          <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-end justify-between mb-14" data-aos="fade-up">
+            <div class="text-left">
+              <h2 class="text-2xl md:text-4xl font-bold text-slate-900 mb-4 tracking-tight" style="font-family: Arial, sans-serif;">
+                Explore Our <span class="text-primary">Learning Hub</span>
+              </h2>
+              <div class="w-20 h-1 bg-primary mt-3 rounded-full opacity-20"></div>
+            </div>
+            
+            <!-- Custom Branded Green Nav Buttons -->
+            <div class="hidden sm:flex items-center gap-3">
+              <button id="hub-prev" class="w-11 h-11 rounded-full bg-[#29965a] text-white flex items-center justify-center hover:bg-[#1b4332] transition-all shadow-md shadow-emerald-900/10 active:scale-95">
+                <i data-lucide="chevron-left" class="w-6 h-6"></i>
+              </button>
+              <button id="hub-next" class="w-11 h-11 rounded-full bg-[#29965a] text-white flex items-center justify-center hover:bg-[#1b4332] transition-all shadow-md shadow-emerald-900/10 active:scale-95">
+                <i data-lucide="chevron-right" class="w-6 h-6"></i>
+              </button>
+            </div>
+          </div>
+ 
+          <div id="hub-slider" class="flex overflow-x-auto gap-6 hide-scrollbar pb-6 scroll-smooth snap-x">
+            
+            <div class="group bg-white group-hover:bg-[#f1f8f6] border border-slate-100 rounded-[2rem] p-4 flex flex-col items-center w-[260px] shrink-0 hover:border-[#29965a]/20 transition-all duration-300 shadow-sm hover:shadow-xl snap-start" data-aos="fade-up" data-aos-delay="50">
+              <div class="w-full h-[120px] bg-[#fb923c] rounded-[2.5rem] flex items-center justify-center mb-5 transition-transform group-hover:scale-[1.02] shadow-inner">
+                <i data-lucide="zap" class="text-white w-12 h-12" stroke-width="2.5"></i>
+              </div>
+              <span class="text-slate-900 font-bold text-[16px] text-center tracking-tight leading-tight">Daily Practice Question</span>
+            </div>
+ 
+            <div class="group bg-white group-hover:bg-[#f1f8f6] border border-slate-100 rounded-[2rem] p-4 flex flex-col items-center w-[260px] shrink-0 hover:border-[#29965a]/20 transition-all duration-300 shadow-sm hover:shadow-xl snap-start" data-aos="fade-up" data-aos-delay="100">
+              <div class="w-full h-[120px] bg-[#10b981] rounded-[2.5rem] flex items-center justify-center mb-5 transition-transform group-hover:scale-[1.02] shadow-inner">
+                <i data-lucide="clipboard-check" class="text-white w-12 h-12" stroke-width="2.5"></i>
+              </div>
+              <span class="text-slate-900 font-bold text-[16px] text-center tracking-tight leading-tight">Weekly Mock Test</span>
+            </div>
+ 
+            <div class="group bg-white group-hover:bg-[#f1f8f6] border border-slate-100 rounded-[2rem] p-4 flex flex-col items-center w-[260px] shrink-0 hover:border-[#29965a]/20 transition-all duration-300 shadow-sm hover:shadow-xl snap-start" data-aos="fade-up" data-aos-delay="150">
+              <div class="w-full h-[120px] bg-[#8b5cf6] rounded-[2.5rem] flex items-center justify-center mb-5 transition-transform group-hover:scale-[1.02] shadow-inner">
+                <i data-lucide="mic-2" class="text-white w-12 h-12" stroke-width="2.5"></i>
+              </div>
+              <span class="text-slate-900 font-bold text-[16px] text-center tracking-tight leading-tight">Soft Skill Preparation</span>
+            </div>
+ 
+            <div class="group bg-white group-hover:bg-[#f1f8f6] border border-slate-100 rounded-[2rem] p-4 flex flex-col items-center w-[260px] shrink-0 hover:border-[#29965a]/20 transition-all duration-300 shadow-sm hover:shadow-xl snap-start" data-aos="fade-up" data-aos-delay="200">
+              <div class="w-full h-[120px] bg-[#3b82f6] rounded-[2.5rem] flex items-center justify-center mb-5 transition-transform group-hover:scale-[1.02] shadow-inner">
+                <i data-lucide="file-user" class="text-white w-12 h-12" stroke-width="2.5"></i>
+              </div>
+              <span class="text-slate-900 font-bold text-[16px] text-center tracking-tight leading-tight">Resume Guide</span>
+            </div>
+ 
+            <div class="group bg-white group-hover:bg-[#f1f8f6] border border-slate-100 rounded-[2rem] p-4 flex flex-col items-center w-[260px] shrink-0 hover:border-[#29965a]/20 transition-all duration-300 shadow-sm hover:shadow-xl snap-start" data-aos="fade-up" data-aos-delay="250">
+              <div class="w-full h-[120px] bg-[#22d3ee] rounded-[2.5rem] flex items-center justify-center mb-5 transition-transform group-hover:scale-[1.02] shadow-inner">
+                <i data-lucide="database" class="text-white w-12 h-12" stroke-width="2.5"></i>
+              </div>
+              <span class="text-slate-900 font-bold text-[16px] text-center tracking-tight leading-tight">DBMS Management</span>
+            </div>
+ 
+            <div class="group bg-white group-hover:bg-[#f1f8f6] border border-slate-100 rounded-[2rem] p-4 flex flex-col items-center w-[260px] shrink-0 hover:border-[#29965a]/20 transition-all duration-300 shadow-sm hover:shadow-xl snap-start" data-aos="fade-up" data-aos-delay="300">
+              <div class="w-full h-[120px] bg-[#84cc16] rounded-[2.5rem] flex items-center justify-center mb-5 transition-transform group-hover:scale-[1.02] shadow-inner">
+                <i data-lucide="cpu" class="text-white w-12 h-12" stroke-width="2.5"></i>
+              </div>
+              <span class="text-slate-900 font-bold text-[16px] text-center tracking-tight leading-tight">Operating Systems</span>
+            </div>
+ 
+            <div class="group bg-white group-hover:bg-[#f1f8f6] border border-slate-100 rounded-[2rem] p-4 flex flex-col items-center w-[260px] shrink-0 hover:border-[#29965a]/20 transition-all duration-300 shadow-sm hover:shadow-xl snap-start" data-aos="fade-up" data-aos-delay="350">
+              <div class="w-full h-[120px] bg-[#6366f1] rounded-[2.5rem] flex items-center justify-center mb-5 transition-transform group-hover:scale-[1.02] shadow-inner">
+                <i data-lucide="git-branch" class="text-white w-12 h-12" stroke-width="2.5"></i>
+              </div>
+              <span class="text-slate-900 font-bold text-[16px] text-center tracking-tight leading-tight">System Design</span>
+            </div>
+ 
+            <div class="group bg-white group-hover:bg-[#f1f8f6] border border-slate-100 rounded-[2rem] p-4 flex flex-col items-center w-[260px] shrink-0 hover:border-[#29965a]/20 transition-all duration-300 shadow-sm hover:shadow-xl snap-start" data-aos="fade-up" data-aos-delay="400">
+              <div class="w-full h-[120px] bg-[#a78bfa] rounded-[2.5rem] flex items-center justify-center mb-5 transition-transform group-hover:scale-[1.02] shadow-inner">
+                <i data-lucide="code-2" class="text-white w-12 h-12" stroke-width="2.5"></i>
+              </div>
+              <span class="text-slate-900 font-bold text-[16px] text-center tracking-tight leading-tight">OOPS Concepts</span>
+            </div>
+ 
+            <div class="group bg-white group-hover:bg-[#f1f8f6] border border-slate-100 rounded-[2rem] p-4 flex flex-col items-center w-[260px] shrink-0 hover:border-[#29965a]/20 transition-all duration-300 shadow-sm hover:shadow-xl snap-start" data-aos="fade-up" data-aos-delay="450">
+              <div class="w-full h-[120px] bg-[#14b8a6] rounded-[2.5rem] flex items-center justify-center mb-5 transition-transform group-hover:scale-[1.02] shadow-inner">
+                <i data-lucide="bar-chart-3" class="text-white w-12 h-12" stroke-width="2.5"></i>
+              </div>
+              <span class="text-slate-900 font-bold text-[16px] text-center tracking-tight leading-tight">DAA Analysis</span>
+            </div>
+ 
+            <div class="group bg-white group-hover:bg-[#f1f8f6] border border-slate-100 rounded-[2rem] p-4 flex flex-col items-center w-[260px] shrink-0 hover:border-[#29965a]/20 transition-all duration-300 shadow-sm hover:shadow-xl snap-start" data-aos="fade-up" data-aos-delay="500">
+              <div class="w-full h-[120px] bg-[#0ea5e9] rounded-[2.5rem] flex items-center justify-center mb-5 transition-transform group-hover:scale-[1.02] shadow-inner">
+                <i data-lucide="binary" class="text-white w-12 h-12" stroke-width="2.5"></i>
+              </div>
+              <span class="text-slate-900 font-bold text-[16px] text-center tracking-tight leading-tight">Algorithms Hub</span>
+            </div>
+ 
+            <div class="group bg-white group-hover:bg-[#f1f8f6] border border-slate-100 rounded-[2rem] p-4 flex flex-col items-center w-[260px] shrink-0 hover:border-[#29965a]/20 transition-all duration-300 shadow-sm hover:shadow-xl snap-start" data-aos="fade-up" data-aos-delay="550">
+              <div class="w-full h-[120px] bg-[#ef4444] rounded-[2.5rem] flex items-center justify-center mb-5 transition-transform group-hover:scale-[1.02] shadow-inner">
+                <i data-lucide="globe" class="text-white w-12 h-12" stroke-width="2.5"></i>
+              </div>
+              <span class="text-slate-900 font-bold text-[16px] text-center tracking-tight leading-tight">Computer Networks</span>
+            </div>
+ 
+            <div class="group bg-white group-hover:bg-[#f1f8f6] border border-slate-100 rounded-[2rem] p-4 flex flex-col items-center w-[260px] shrink-0 hover:border-[#29965a]/20 transition-all duration-300 shadow-sm hover:shadow-xl snap-start" data-aos="fade-up" data-aos-delay="600">
+              <div class="w-full h-[120px] bg-[#f43f5e] rounded-[2.5rem] flex items-center justify-center mb-5 transition-transform group-hover:scale-[1.02] shadow-inner">
+                <i data-lucide="layout-grid" class="text-white w-12 h-12" stroke-width="2.5"></i>
+              </div>
+              <span class="text-slate-900 font-bold text-[16px] text-center tracking-tight leading-tight">Elite DSA Sheet</span>
+            </div>
+ 
+            <div class="group bg-white group-hover:bg-[#f1f8f6] border border-slate-100 rounded-[2rem] p-4 flex flex-col items-center w-[260px] shrink-0 hover:border-[#29965a]/20 transition-all duration-300 shadow-sm hover:shadow-xl snap-start" data-aos="fade-up" data-aos-delay="650">
+              <div class="w-full h-[120px] bg-[#f59e0b] rounded-[2.5rem] flex items-center justify-center mb-5 transition-transform group-hover:scale-[1.02] shadow-inner">
+                <i data-lucide="briefcase" class="text-white w-12 h-12" stroke-width="2.5"></i>
+              </div>
+              <span class="text-slate-900 font-bold text-[16px] text-center tracking-tight leading-tight">Interview Guide</span>
+            </div>
+ 
+          </div>
+        </div>
+ 
+        <script>
+          document.addEventListener('DOMContentLoaded', () => {
+            const slider = document.getElementById('hub-slider');
+            const prev = document.getElementById('hub-prev');
+            const next = document.getElementById('hub-next');
+            if (slider && prev && next) {
+              const cardWidth = 260 + 24; // Updated Width + Gap
+              prev.addEventListener('click', () => slider.scrollBy({ left: -cardWidth * 2, behavior: 'smooth' }));
+              next.addEventListener('click', () => slider.scrollBy({ left: cardWidth * 2, behavior: 'smooth' }));
+            }
+          });
+        </script>
+ 
+        <!-- CTA Button -->
+        <div class="mt-16 text-center w-full flex flex-col items-center justify-center relative"
+          data-aos="fade-up" data-aos-delay="300">
+          <!-- Glowing Pulse Effect Behind Button -->
+          <div class="absolute top-4 w-48 h-12 bg-primary/40 rounded-full blur-2xl animate-[pulse_2s_infinite]"></div>
 
-          // Autoplay loop
-          autoplayInterval = setInterval(() => {
-            let nextTab = (currentTab + 1) % tabs.length;
-            activateTab(nextTab);
-          }, 4000); // 4 seconds
-          
-          // Initialize first tab progress bar
-          activateTab(0);
-          
-          // Initialize lucide icons for the newly added elements
-          if(typeof lucide !== 'undefined') lucide.createIcons();
-        });
-      </script>
-      
-      <!-- CTA Button -->
-      <div class="mt-12 lg:mt-16 text-center w-full flex flex-col items-center justify-center relative" data-aos="fade-up" data-aos-delay="300">
-        <!-- Glowing Pulse Effect Behind Button -->
-        <div class="absolute top-4 w-48 h-12 bg-primary/40 rounded-full blur-2xl animate-[pulse_2s_infinite]"></div>
-        
-        <a href="https://learn.dnkskill.in" target="_blank" class="group relative inline-flex items-center justify-center gap-3 bg-primary text-primary-foreground px-8 py-4 rounded-full font-bold text-[17px] sm:text-lg shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/40 hover:-translate-y-1 transition-all duration-300 overflow-hidden ring-2 ring-transparent hover:ring-primary/50 ring-offset-4 ring-offset-background max-w-sm w-fit mx-auto z-10">
-          <span class="relative z-10 flex items-center gap-2">
-            Explore Platform For Free <i data-lucide="external-link" class="w-5 h-5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
-          </span>
-          <div class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out z-0"></div>
-        </a>
-        <p class="mt-4 text-sm text-muted-foreground font-medium flex items-center justify-center gap-1.5 opacity-80 z-10">
-          <i data-lucide="sparkles" class="w-4 h-4 text-[#ffbd2e]"></i> Free 1-year access for all enrolled students
+          <a href="https://learn.dnkskill.in" target="_blank"
+            class="group relative inline-flex items-center justify-center gap-3 bg-primary text-primary-foreground px-8 py-4 rounded-full font-bold text-[17px] sm:text-lg shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/40 hover:-translate-y-1 transition-all duration-300 overflow-hidden ring-2 ring-transparent hover:ring-primary/50 ring-offset-4 ring-offset-background max-w-sm w-fit mx-auto z-10">
+            <span class="relative z-10 flex items-center gap-2">
+              Explore Platform For Free <i data-lucide="external-link"
+                class="w-5 h-5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+            </span>
+            <div
+              class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out z-0">
+            </div>
+          </a>
+          <p
+            class="mt-4 text-sm text-muted-foreground font-medium flex items-center justify-center gap-1.5 opacity-80 z-10">
+            <i data-lucide="sparkles" class="w-4 h-4 text-[#ffbd2e]"></i> Free 1-year access for all enrolled students
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- White Separator -->
+    <div class="h-20 bg-background w-full"></div>
+
+    <!-- WhyChooseSection -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-2xl md:text-3xl font-bold text-center text-foreground">
+          Why Choose <span class="text-primary">DNK Skill?</span>
+        </h2>
+        <p class="mt-3 text-center text-muted-foreground">
+          Join thousands of learners and upgrade your skills.
         </p>
+        <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <div class="border border-border rounded-xl p-6 bg-card hover:shadow-lg transition-shadow">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center">
+                <i data-lucide="rocket" class="text-primary" style="width: 22px; height: 22px;"></i>
+              </div>
+              <h3 class="font-bold text-foreground">Industry-Oriented Training</h3>
+            </div>
+            <div class="flex flex-col gap-2.5 text-muted-foreground text-[14px]">
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-square" class="text-primary shrink-0" style="width: 16px; height: 16px;"></i> 
+                Live Interactive Classes
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-square" class="text-primary shrink-0" style="width: 16px; height: 16px;"></i> 
+                Industry Standard Curriculum
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-square" class="text-primary shrink-0" style="width: 16px; height: 16px;"></i> 
+                Real-world Case Studies
+              </div>
+            </div>
+          </div>
+
+          <div class="border border-border rounded-xl p-6 bg-card hover:shadow-lg transition-shadow">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center">
+                <i data-lucide="monitor-play" class="text-primary" style="width: 22px; height: 22px;"></i>
+              </div>
+              <h3 class="font-bold text-foreground">Live Classes + Doubt Support</h3>
+            </div>
+            <div class="flex flex-col gap-2.5 text-muted-foreground text-[14px]">
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-square" class="text-primary shrink-0" style="width: 16px; height: 16px;"></i> 
+                24/7 Expert Doubt Resolution
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-square" class="text-primary shrink-0" style="width: 16px; height: 16px;"></i> 
+                Interactive Doubt Sessions
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-square" class="text-primary shrink-0" style="width: 16px; height: 16px;"></i> 
+                Daily Feedback System
+              </div>
+            </div>
+          </div>
+
+          <div class="border border-border rounded-xl p-6 bg-card hover:shadow-lg transition-shadow">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center">
+                <i data-lucide="file-code" class="text-primary" style="width: 22px; height: 22px;"></i>
+              </div>
+              <h3 class="font-bold text-foreground">Real Projects &amp; Practice</h3>
+            </div>
+            <div class="flex flex-col gap-2.5 text-muted-foreground text-[14px]">
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-square" class="text-primary shrink-0" style="width: 16px; height: 16px;"></i> 
+                100+ Practical Coding Problems
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-square" class="text-primary shrink-0" style="width: 16px; height: 16px;"></i> 
+                Capstone Industry Projects
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-square" class="text-primary shrink-0" style="width: 16px; height: 16px;"></i> 
+                Regular Coding Contests
+              </div>
+            </div>
+          </div>
+
+          <div class="border border-border rounded-xl p-6 bg-card hover:shadow-lg transition-shadow">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center">
+                <i data-lucide="trending-up" class="text-primary" style="width: 22px; height: 22px;"></i>
+              </div>
+              <h3 class="font-bold text-foreground">Career Guidance &amp; Growth</h3>
+            </div>
+            <div class="flex flex-col gap-2.5 text-muted-foreground text-[14px]">
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-square" class="text-primary shrink-0" style="width: 16px; height: 16px;"></i> 
+                Specialized Career Coaching
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-square" class="text-primary shrink-0" style="width: 16px; height: 16px;"></i> 
+                Networking with Professionals
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-square" class="text-primary shrink-0" style="width: 16px; height: 16px;"></i> 
+                Job Readiness Programs
+              </div>
+            </div>
+          </div>
+
+          <div class="border border-border rounded-xl p-6 bg-card hover:shadow-lg transition-shadow">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center">
+                <i data-lucide="video" class="text-primary" style="width: 22px; height: 22px;"></i>
+              </div>
+              <h3 class="font-bold text-foreground">1-on-1 Mock Interview</h3>
+            </div>
+            <div class="flex flex-col gap-2.5 text-muted-foreground text-[14px]">
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-square" class="text-primary shrink-0" style="width: 16px; height: 16px;"></i> 
+                Industry Expert Mock Tests
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-square" class="text-primary shrink-0" style="width: 16px; height: 16px;"></i> 
+                Behavioral Coaching
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-square" class="text-primary shrink-0" style="width: 16px; height: 16px;"></i> 
+                Unlimited Coding Assessments
+              </div>
+            </div>
+          </div>
+
+          <div class="border border-border rounded-xl p-6 bg-card hover:shadow-lg transition-shadow">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center">
+                <i data-lucide="user-check" class="text-primary" style="width: 22px; height: 22px;"></i>
+              </div>
+              <h3 class="font-bold text-foreground">Resume & Profile Review</h3>
+            </div>
+            <div class="flex flex-col gap-2.5 text-muted-foreground text-[14px]">
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-square" class="text-primary shrink-0" style="width: 16px; height: 16px;"></i> 
+                Expert Resume Optimization
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-square" class="text-primary shrink-0" style="width: 16px; height: 16px;"></i> 
+                Portfolio Design Guidance
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-square" class="text-primary shrink-0" style="width: 16px; height: 16px;"></i> 
+                LinkedIn Branding Strategy
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
       </div>
+    </section>
 
-    </div>
-  </section>
 
-  <!-- WhyChooseSection -->
-  <section class="py-16 bg-hero">
-    <div class="max-w-7xl mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl font-bold text-center text-foreground">
-        Why Choose <span class="text-primary">DNK Skill?</span>
-      </h2>
-      <p class="mt-3 text-center text-muted-foreground">
-        Join thousands of learners and upgrade your skills.
-      </p>
-      <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-
-        <div class="border border-border rounded-xl p-6 bg-card hover:shadow-lg transition-shadow">
-          <div class="flex items-center gap-3 mb-3">
-            <div class="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center">
-              <i data-lucide="rocket" class="text-primary" style="width: 22px; height: 22px;"></i>
-            </div>
-            <h3 class="font-bold text-foreground">Industry-Oriented Training</h3>
-          </div>
-          <div class="flex items-center gap-2 text-muted-foreground">
-            <i data-lucide="check-square" class="text-primary shrink-0" style="width: 16px; height: 16px;"></i> Live
-            Classes
-          </div>
-        </div>
-
-        <div class="border border-border rounded-xl p-6 bg-card hover:shadow-lg transition-shadow">
-          <div class="flex items-center gap-3 mb-3">
-            <div class="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center">
-              <i data-lucide="file-code" class="text-primary" style="width: 22px; height: 22px;"></i>
-            </div>
-            <h3 class="font-bold text-foreground">Real Projects &amp; Practice</h3>
-          </div>
-          <div class="flex items-center gap-2 text-muted-foreground">
-            <i data-lucide="check-square" class="text-primary shrink-0" style="width: 16px; height: 16px;"></i> 100+
-            Problems, Real Projects
-          </div>
-        </div>
-
-        <div class="border border-border rounded-xl p-6 bg-card hover:shadow-lg transition-shadow">
-          <div class="flex items-center gap-3 mb-3">
-            <div class="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center">
-              <i data-lucide="graduation-cap" class="text-primary" style="width: 22px; height: 22px;"></i>
-            </div>
-            <h3 class="font-bold text-foreground">Beginner to Advanced Learning</h3>
-          </div>
-          <div class="flex items-center gap-2 text-muted-foreground">
-            <i data-lucide="check-square" class="text-primary shrink-0" style="width: 16px; height: 16px;"></i>
-            Portfolio Building
-          </div>
-        </div>
-
-        <div class="border border-border rounded-xl p-6 bg-card hover:shadow-lg transition-shadow">
-          <div class="flex items-center gap-3 mb-3">
-            <div class="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center">
-              <i data-lucide="monitor-play" class="text-primary" style="width: 22px; height: 22px;"></i>
-            </div>
-            <h3 class="font-bold text-foreground">Live Classes + Doubt Support</h3>
-          </div>
-          <div class="flex items-center gap-2 text-muted-foreground">
-            <i data-lucide="check-square" class="text-primary shrink-0" style="width: 16px; height: 16px;"></i> 24/7
-            Doubt Resolution
-          </div>
-        </div>
-
-        <div class="border border-border rounded-xl p-6 bg-card hover:shadow-lg transition-shadow">
-          <div class="flex items-center gap-3 mb-3">
-            <div class="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center">
-              <i data-lucide="trending-up" class="text-primary" style="width: 22px; height: 22px;"></i>
-            </div>
-            <h3 class="font-bold text-foreground">Career Guidance &amp; Growth</h3>
-          </div>
-          <div class="flex items-center gap-2 text-muted-foreground">
-            <i data-lucide="check-square" class="text-primary shrink-0" style="width: 16px; height: 16px;"></i>
-            Placement Assistance
-          </div>
-        </div>
-
+    
+    <!-- Your Roadmap to Success Section -->
+    <section class="py-20 bg-slate-50 relative overflow-hidden border-y border-slate-200/60">
+      <!-- Decorative background element -->
+      <div class="absolute top-0 left-0 w-full h-full opacity-40 pointer-events-none">
+        <div class="absolute -top-24 -right-24 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
       </div>
-    </div>
-  </section>
-
-
-  <!-- Meet our Mentors Section -->
-  <section id="mentors" class="py-16 bg-background">
-    <div class="max-w-7xl mx-auto px-4">
-      <div class="flex flex-col md:flex-row justify-between items-end mb-10 gap-6">
-        <div>
-          <h2 class="text-3xl md:text-4xl font-bold text-foreground relative inline-block">
-            Meet our Mentors
-            <!-- Custom underline matching the screenshot -->
-            <svg class="absolute -bottom-3 left-0 w-full h-3 text-primary opacity-50" viewBox="0 0 100 10"
-              preserveAspectRatio="none">
-              <path d="M0 5 Q 50 10 100 3" stroke="currentColor" stroke-width="1.5" fill="none"
-                stroke-linecap="round" />
-              <path d="M10 8 Q 50 12 90 7" stroke="currentColor" stroke-width="0.75" fill="none"
-                stroke-linecap="round" />
-            </svg>
+      
+      <div class="max-w-7xl mx-auto px-4 relative z-10">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary font-bold text-xs uppercase tracking-wider mb-4 border border-primary/20">
+            <i data-lucide="map" class="w-3.5 h-3.5"></i>
+            Progressive Path
+          </div>
+          <h2 class="text-3xl md:text-5xl font-bold text-slate-900 mb-4 tracking-tight leading-tight" style="font-family: Arial, sans-serif;">
+            Your Roadmap to <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-[#ff6b4a]">Success</span>
           </h2>
+          <p class="text-lg text-slate-600 max-w-2xl mx-auto font-medium">
+            From enrollment to your dream job, we follow a proven systematic approach to master any skill.
+          </p>
         </div>
-        <div class="flex gap-3 hidden sm:flex">
-          <button id="mentors-prev"
-            class="w-10 h-10 rounded-full flex items-center justify-center bg-primary text-primary-foreground hover:opacity-90 transition-opacity shadow-sm">
-            <i data-lucide="chevron-left" style="width: 20px; height: 20px;"></i>
-          </button>
-          <button id="mentors-next"
-            class="w-10 h-10 rounded-full flex items-center justify-center bg-primary text-primary-foreground hover:opacity-90 transition-opacity shadow-sm">
-            <i data-lucide="chevron-right" style="width: 20px; height: 20px;"></i>
-          </button>
+
+        <div class="relative">
+          <!-- Connector Line (Desktop) -->
+          <div class="hidden lg:block absolute top-[40px] left-0 w-full h-0.5 border-t-2 border-dashed border-primary/20 z-0"></div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8 relative z-10">
+            
+            <!-- Step 1 -->
+            <div class="group roadmap-step flex flex-col items-center text-center px-4 transition-all duration-500" data-aos="fade-up" data-aos-delay="100">
+              <div class="w-20 h-20 rounded-2xl bg-white border-2 border-primary/10 shadow-sm flex items-center justify-center mb-6 group-hover:bg-primary group-hover:border-primary group-hover:scale-110 group-hover:shadow-[0_20px_50px_-12px_rgba(0,0,0,0.4)] group-hover:-translate-y-2 group-hover:ring-transparent group-[.is-active]:bg-primary group-[.is-active]:border-primary group-[.is-active]:scale-110 group-[.is-active]:shadow-[0_20px_50px_-12px_rgba(0,0,0,0.4)] group-[.is-active]:-translate-y-2 group-[.is-active]:ring-transparent transition-all duration-500 relative ring-[12px] ring-slate-50">
+                <span class="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-slate-900 text-white text-xs font-black flex items-center justify-center shadow-lg border-2 border-white group-hover:bg-primary group-[.is-active]:bg-primary transition-colors duration-500">01</span>
+                <i data-lucide="book-open-check" class="w-10 h-10 text-primary group-hover:text-white group-[.is-active]:text-white transition-colors duration-500" stroke-width="2"></i>
+              </div>
+              <h3 class="font-bold text-xl text-slate-900 mb-2 tracking-tight transition-colors group-hover:text-primary group-[.is-active]:text-primary" style="font-family: Arial, sans-serif;">Select Your Course</h3>
+              <p class="text-[15px] text-slate-500 leading-relaxed max-w-[220px] mx-auto">
+                Choose the program that perfectly aligns with your career passion and goals.
+              </p>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="group roadmap-step flex flex-col items-center text-center px-4 transition-all duration-500" data-aos="fade-up" data-aos-delay="200">
+              <div class="w-20 h-20 rounded-2xl bg-white border-2 border-primary/10 shadow-sm flex items-center justify-center mb-6 group-hover:bg-primary group-hover:border-primary group-hover:scale-110 group-hover:shadow-[0_20px_50px_-12px_rgba(0,0,0,0.4)] group-hover:-translate-y-2 group-hover:ring-transparent group-[.is-active]:bg-primary group-[.is-active]:border-primary group-[.is-active]:scale-110 group-[.is-active]:shadow-[0_20px_50px_-12px_rgba(0,0,0,0.4)] group-[.is-active]:-translate-y-2 group-[.is-active]:ring-transparent transition-all duration-500 relative ring-[12px] ring-slate-50">
+                <span class="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-slate-900 text-white text-xs font-black flex items-center justify-center shadow-lg border-2 border-white group-hover:bg-primary group-[.is-active]:bg-primary transition-colors duration-500">02</span>
+                <i data-lucide="graduation-cap" class="w-10 h-10 text-primary group-hover:text-white group-[.is-active]:text-white transition-colors duration-500" stroke-width="2"></i>
+              </div>
+              <h3 class="font-bold text-xl text-slate-900 mb-2 tracking-tight transition-colors group-hover:text-primary group-[.is-active]:text-primary" style="font-family: Arial, sans-serif;">Expert-Led Training</h3>
+              <p class="text-[15px] text-slate-500 leading-relaxed max-w-[220px] mx-auto">
+                Deep dive into concepts via live interactive classes and personalized mentorship.
+              </p>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="group roadmap-step flex flex-col items-center text-center px-4 transition-all duration-500" data-aos="fade-up" data-aos-delay="300">
+              <div class="w-20 h-20 rounded-2xl bg-white border-2 border-primary/10 shadow-sm flex items-center justify-center mb-6 group-hover:bg-primary group-hover:border-primary group-hover:scale-110 group-hover:shadow-[0_20px_50px_-12px_rgba(0,0,0,0.4)] group-hover:-translate-y-2 group-hover:ring-transparent group-[.is-active]:bg-primary group-[.is-active]:border-primary group-[.is-active]:scale-110 group-[.is-active]:shadow-[0_20px_50px_-12px_rgba(0,0,0,0.4)] group-[.is-active]:-translate-y-2 group-[.is-active]:ring-transparent transition-all duration-500 relative ring-[12px] ring-slate-50">
+                <span class="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-slate-900 text-white text-xs font-black flex items-center justify-center shadow-lg border-2 border-white group-hover:bg-primary group-[.is-active]:bg-primary transition-colors duration-500">03</span>
+                <i data-lucide="panels-top-left" class="w-10 h-10 text-primary group-hover:text-white group-[.is-active]:text-white transition-colors duration-500" stroke-width="2"></i>
+              </div>
+              <h3 class="font-bold text-xl text-slate-900 mb-2 tracking-tight transition-colors group-hover:text-primary group-[.is-active]:text-primary" style="font-family: Arial, sans-serif;">Industrial Projects</h3>
+              <p class="text-[15px] text-slate-500 leading-relaxed max-w-[220px] mx-auto">
+                Build a high-impact portfolio by working on real-world industry capstone projects.
+              </p>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="group roadmap-step flex flex-col items-center text-center px-4 transition-all duration-500" data-aos="fade-up" data-aos-delay="400">
+              <div class="w-20 h-20 rounded-2xl bg-white border-2 border-primary/10 shadow-sm flex items-center justify-center mb-6 group-hover:bg-primary group-hover:border-primary group-hover:scale-110 group-hover:shadow-[0_20px_50px_-12px_rgba(0,0,0,0.4)] group-hover:-translate-y-2 group-hover:ring-transparent group-[.is-active]:bg-primary group-[.is-active]:border-primary group-[.is-active]:scale-110 group-[.is-active]:shadow-[0_20px_50px_-12px_rgba(0,0,0,0.4)] group-[.is-active]:-translate-y-2 group-[.is-active]:ring-transparent transition-all duration-500 relative ring-[12px] ring-slate-50">
+                <span class="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-slate-900 text-white text-xs font-black flex items-center justify-center shadow-lg border-2 border-white group-hover:bg-primary group-[.is-active]:bg-primary transition-colors duration-500">04</span>
+                <i data-lucide="award" class="w-10 h-10 text-primary group-hover:text-white group-[.is-active]:text-white transition-colors duration-500" stroke-width="2"></i>
+              </div>
+              <h3 class="font-bold text-xl text-slate-900 mb-2 tracking-tight transition-colors group-hover:text-primary group-[.is-active]:text-primary" style="font-family: Arial, sans-serif;">Get Certified</h3>
+              <p class="text-[15px] text-slate-500 leading-relaxed max-w-[220px] mx-auto">
+                Earn an industry-recognized certificate to boost your professional resume.
+              </p>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="group roadmap-step flex flex-col items-center text-center px-4 transition-all duration-500" data-aos="fade-up" data-aos-delay="500">
+              <div class="w-20 h-20 rounded-2xl bg-white border-2 border-primary/10 shadow-sm flex items-center justify-center mb-6 group-hover:bg-primary group-hover:border-primary group-hover:scale-110 group-hover:shadow-[0_20px_50px_-12px_rgba(0,0,0,0.4)] group-hover:-translate-y-2 group-hover:ring-transparent group-[.is-active]:bg-primary group-[.is-active]:border-primary group-[.is-active]:scale-110 group-[.is-active]:shadow-[0_20px_50px_-12px_rgba(0,0,0,0.4)] group-[.is-active]:-translate-y-2 group-[.is-active]:ring-transparent transition-all duration-500 relative ring-[12px] ring-slate-50">
+                <span class="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-slate-900 text-white text-xs font-black flex items-center justify-center shadow-lg border-2 border-white group-hover:bg-primary group-[.is-active]:bg-primary transition-colors duration-500">05</span>
+                <i data-lucide="briefcase" class="w-10 h-10 text-primary group-hover:text-white group-[.is-active]:text-white transition-colors duration-500" stroke-width="2"></i>
+              </div>
+              <h3 class="font-bold text-xl text-slate-900 mb-2 tracking-tight transition-colors group-hover:text-primary group-[.is-active]:text-primary" style="font-family: Arial, sans-serif;">Career Placement</h3>
+              <p class="text-[15px] text-slate-500 leading-relaxed max-w-[220px] mx-auto">
+                Ace top-tier interviews with our career coaching and dedicated placement portal.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Bottom CTA -->
+        <div class="mt-20 text-center" data-aos="fade-up" data-aos-delay="500">
+          <div class="inline-flex items-center gap-4 sm:gap-6 p-1.5 pl-6 bg-white rounded-full border border-slate-200 shadow-sm overflow-hidden whitespace-nowrap">
+            <span class="text-xs sm:text-sm font-bold text-slate-500">Explore our curriculum to start Step 1</span>
+            <a href="#courses" class="group relative inline-flex items-center justify-center gap-3 bg-primary text-primary-foreground px-6 py-3 rounded-full font-bold text-xs sm:text-sm shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/40 hover:-translate-y-1 transition-all duration-300 overflow-hidden ring-2 ring-primary/20 hover:ring-primary/50 ring-offset-4 ring-offset-white z-10">
+              <span class="relative z-10 flex items-center gap-2">
+                View Programs <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+              </span>
+              <div class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out z-0"></div>
+            </a>
+          </div>
         </div>
       </div>
+    </section>
 
-      <!-- Mentors Carousel -->
-      <div id="mentors-carousel"
-        class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-4 hide-scrollbar scroll-smooth">
 
-        <!-- Mentor 1 -->
-        <div
-          class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] flex-none snap-start rounded-xl overflow-hidden border border-border bg-card hover:shadow-lg transition-shadow">
-          <div class="h-64 bg-[#f1f6f5] relative flex items-end justify-center overflow-hidden">
-            <div class="absolute top-4 left-4 flex gap-1.5 z-0">
-              <div class="w-2 h-2 rounded-full bg-white"></div>
-              <div class="w-2 h-2 rounded-full bg-white"></div>
-            </div>
-            <div
-              class="absolute -right-6 -bottom-6 text-[220px] font-black text-white opacity-40 leading-none select-none z-0"
-              style="font-family: Arial, sans-serif;">K</div>
-            <img src="mentor1.png" alt="Priyash Nigam" class="relative z-10 w-48 object-contain drop-shadow-md"
-              style="max-height: 100%;" onerror="this.src='https://placehold.co/400x500/transparent/333?text=Image'" />
+    <!-- Meet our Mentors Section -->
+    <section id="mentors" class="py-16 bg-background">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-10 gap-6">
+          <div>
+            <h2 class="text-3xl md:text-4xl font-bold text-foreground relative inline-block">
+              Meet our Mentors
+              <!-- Custom underline matching the screenshot -->
+              <svg class="absolute -bottom-3 left-0 w-full h-3 text-primary opacity-50" viewBox="0 0 100 10"
+                preserveAspectRatio="none">
+                <path d="M0 5 Q 50 10 100 3" stroke="currentColor" stroke-width="1.5" fill="none"
+                  stroke-linecap="round" />
+                <path d="M10 8 Q 50 12 90 7" stroke="currentColor" stroke-width="0.75" fill="none"
+                  stroke-linecap="round" />
+              </svg>
+            </h2>
           </div>
-          <div class="p-5 bg-white relative z-20">
-            <div class="flex justify-between items-start mb-1 gap-2">
-              <h3 class="font-bold text-lg text-foreground leading-tight">Priyash Nigam</h3>
-
-            </div>
-            <p class="text-xs text-muted-foreground truncate">CEO, Execube Digital | Fractional CMO |...</p>
-          </div>
-        </div>
-
-        <!-- Mentor 2 -->
-        <div
-          class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] flex-none snap-start rounded-xl overflow-hidden border border-border bg-card hover:shadow-lg transition-shadow">
-          <div class="h-64 bg-[#f1f6f5] relative flex items-end justify-center overflow-hidden">
-            <div class="absolute top-4 left-4 flex gap-1.5 z-0">
-              <div class="w-2 h-2 rounded-full bg-white"></div>
-              <div class="w-2 h-2 rounded-full bg-white"></div>
-            </div>
-            <div
-              class="absolute -right-6 -bottom-6 text-[220px] font-black text-white opacity-40 leading-none select-none z-0"
-              style="font-family: Arial, sans-serif;">K</div>
-            <img src="mentor2.png" alt="Gaurav Thadani" class="relative z-10 w-48 object-contain drop-shadow-md"
-              style="max-height: 100%;" onerror="this.src='https://placehold.co/400x500/transparent/333?text=Image'" />
-          </div>
-          <div class="p-5 bg-white relative z-20">
-            <div class="flex justify-between items-start mb-1 gap-2">
-              <h3 class="font-bold text-lg text-foreground leading-tight">Gaurav Thadani</h3>
-
-            </div>
-            <p class="text-xs text-muted-foreground truncate">Senior Software Developer</p>
+          <div class="flex gap-3 hidden sm:flex">
+            <button id="mentors-prev"
+              class="w-10 h-10 rounded-full flex items-center justify-center bg-primary text-primary-foreground hover:opacity-90 transition-opacity shadow-sm">
+              <i data-lucide="chevron-left" style="width: 20px; height: 20px;"></i>
+            </button>
+            <button id="mentors-next"
+              class="w-10 h-10 rounded-full flex items-center justify-center bg-primary text-primary-foreground hover:opacity-90 transition-opacity shadow-sm">
+              <i data-lucide="chevron-right" style="width: 20px; height: 20px;"></i>
+            </button>
           </div>
         </div>
 
-        <!-- Mentor 3 -->
-        <div
-          class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] flex-none snap-start rounded-xl overflow-hidden border border-border bg-card hover:shadow-lg transition-shadow">
-          <div class="h-64 bg-[#f1f6f5] relative flex items-end justify-center overflow-hidden">
-            <div class="absolute top-4 left-4 flex gap-1.5 z-0">
-              <div class="w-2 h-2 rounded-full bg-white"></div>
-              <div class="w-2 h-2 rounded-full bg-white"></div>
-            </div>
-            <div
-              class="absolute -right-6 -bottom-6 text-[220px] font-black text-white opacity-40 leading-none select-none z-0"
-              style="font-family: Arial, sans-serif;">K</div>
-            <img src="mentor3.png" alt="Ajay Kumar Gupta" class="relative z-10 w-48 object-contain drop-shadow-md"
-              style="max-height: 100%;" onerror="this.src='https://placehold.co/400x500/transparent/333?text=Image'" />
-          </div>
-          <div class="p-5 bg-white relative z-20">
-            <div class="flex justify-between items-start mb-1 gap-2">
-              <h3 class="font-bold text-lg text-foreground leading-tight">Ajay Kumar Gupta</h3>
+        <!-- Mentors Carousel -->
+        <div id="mentors-carousel"
+          class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-4 hide-scrollbar scroll-smooth">
 
-            </div>
-            <p class="text-xs text-muted-foreground truncate">Senior Data Scientist</p>
-          </div>
-        </div>
-
-        <!-- Mentor 4 -->
-        <div
-          class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] flex-none snap-start rounded-xl overflow-hidden border border-border bg-card hover:shadow-lg transition-shadow">
-          <div class="h-64 bg-[#f1f6f5] relative flex items-end justify-center overflow-hidden">
-            <div class="absolute top-4 left-4 flex gap-1.5 z-0">
-              <div class="w-2 h-2 rounded-full bg-white"></div>
-              <div class="w-2 h-2 rounded-full bg-white"></div>
-            </div>
-            <div
-              class="absolute -right-6 -bottom-6 text-[220px] font-black text-white opacity-40 leading-none select-none z-0"
-              style="font-family: Arial, sans-serif;">K</div>
-            <img src="mentor4.png" alt="Ekta" class="relative z-10 w-48 object-contain drop-shadow-md"
-              style="max-height: 100%;" onerror="this.src='https://placehold.co/400x500/transparent/333?text=Image'" />
-          </div>
-          <div class="p-5 bg-white relative z-20">
-            <div class="flex justify-between items-start mb-1 gap-2">
-              <h3 class="font-bold text-lg text-foreground leading-tight">Ekta</h3>
-
-            </div>
-            <p class="text-xs text-muted-foreground truncate">Data Scientist</p>
-          </div>
-        </div>
-
-        <!-- Mentor 5 -->
-        <div
-          class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] flex-none snap-start rounded-xl overflow-hidden border border-border bg-card hover:shadow-lg transition-shadow">
-          <div class="h-64 bg-[#f1f6f5] relative flex items-end justify-center overflow-hidden">
-            <div class="absolute top-4 left-4 flex gap-1.5 z-0">
-              <div class="w-2 h-2 rounded-full bg-white"></div>
-              <div class="w-2 h-2 rounded-full bg-white"></div>
-            </div>
-            <div
-              class="absolute -right-6 -bottom-6 text-[220px] font-black text-white opacity-40 leading-none select-none z-0"
-              style="font-family: Arial, sans-serif;">K</div>
-            <img src="mentor5.png" alt="Rohan Sharma" class="relative z-10 w-48 object-contain drop-shadow-md"
-              style="max-height: 100%;" onerror="this.src='https://placehold.co/400x500/transparent/333?text=Image'" />
-          </div>
-          <div class="p-5 bg-white relative z-20">
-            <div class="flex justify-between items-start mb-1 gap-2">
-              <h3 class="font-bold text-lg text-foreground leading-tight">Rohan Sharma</h3>
-
-            </div>
-            <p class="text-xs text-muted-foreground truncate">Product Designer</p>
-          </div>
-        </div>
-
-        <!-- Mentor 6 -->
-        <div
-          class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] flex-none snap-start rounded-xl overflow-hidden border border-border bg-card hover:shadow-lg transition-shadow">
-          <div class="h-64 bg-[#f1f6f5] relative flex items-end justify-center overflow-hidden">
-            <div class="absolute top-4 left-4 flex gap-1.5 z-0">
-              <div class="w-2 h-2 rounded-full bg-white"></div>
-              <div class="w-2 h-2 rounded-full bg-white"></div>
-            </div>
-            <div
-              class="absolute -right-6 -bottom-6 text-[220px] font-black text-white opacity-40 leading-none select-none z-0"
-              style="font-family: Arial, sans-serif;">K</div>
-            <img src="mentor6.png" alt="Neha Singh" class="relative z-10 w-48 object-contain drop-shadow-md"
-              style="max-height: 100%;" onerror="this.src='https://placehold.co/400x500/transparent/333?text=Image'" />
-          </div>
-          <div class="p-5 bg-white relative z-20">
-            <div class="flex justify-between items-start mb-1 gap-2">
-              <h3 class="font-bold text-lg text-foreground leading-tight">Neha Singh</h3>
-
-            </div>
-            <p class="text-xs text-muted-foreground truncate">UI/UX Lead</p>
-          </div>
-        </div>
-
-        <!-- Mentor 7 -->
-        <div
-          class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] flex-none snap-start rounded-xl overflow-hidden border border-border bg-card hover:shadow-lg transition-shadow">
-          <div class="h-64 bg-[#f1f6f5] relative flex items-end justify-center overflow-hidden">
-            <div class="absolute top-4 left-4 flex gap-1.5 z-0">
-              <div class="w-2 h-2 rounded-full bg-white"></div>
-              <div class="w-2 h-2 rounded-full bg-white"></div>
-            </div>
-            <div
-              class="absolute -right-6 -bottom-6 text-[220px] font-black text-white opacity-40 leading-none select-none z-0"
-              style="font-family: Arial, sans-serif;">K</div>
-            <img src="mentor7.png" alt="Amit Kumar" class="relative z-10 w-48 object-contain drop-shadow-md"
-              style="max-height: 100%;" onerror="this.src='https://placehold.co/400x500/transparent/333?text=Image'" />
-          </div>
-          <div class="p-5 bg-white relative z-20">
-            <div class="flex justify-between items-start mb-1 gap-2">
-              <h3 class="font-bold text-lg text-foreground leading-tight">Amit Kumar</h3>
-
-            </div>
-            <p class="text-xs text-muted-foreground truncate">Backend Architect</p>
-          </div>
-        </div>
-
-        <!-- Mentor 8 -->
-        <div
-          class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] flex-none snap-start rounded-xl overflow-hidden border border-border bg-card hover:shadow-lg transition-shadow">
-          <div class="h-64 bg-[#f1f6f5] relative flex items-end justify-center overflow-hidden">
-            <div class="absolute top-4 left-4 flex gap-1.5 z-0">
-              <div class="w-2 h-2 rounded-full bg-white"></div>
-              <div class="w-2 h-2 rounded-full bg-white"></div>
-            </div>
-            <div
-              class="absolute -right-6 -bottom-6 text-[220px] font-black text-white opacity-40 leading-none select-none z-0"
-              style="font-family: Arial, sans-serif;">K</div>
-            <img src="mentor8.png" alt="Priya Patel" class="relative z-10 w-48 object-contain drop-shadow-md"
-              style="max-height: 100%;" onerror="this.src='https://placehold.co/400x500/transparent/333?text=Image'" />
-          </div>
-          <div class="p-5 bg-white relative z-20">
-            <div class="flex justify-between items-start mb-1 gap-2">
-              <h3 class="font-bold text-lg text-foreground leading-tight">Priya Patel</h3>
-
-            </div>
-            <p class="text-xs text-muted-foreground truncate">Frontend Team Lead</p>
-          </div>
-        </div>
-
-        <!-- Mentor 9 -->
-        <div
-          class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] flex-none snap-start rounded-xl overflow-hidden border border-border bg-card hover:shadow-lg transition-shadow">
-          <div class="h-64 bg-[#f1f6f5] relative flex items-end justify-center overflow-hidden">
-            <div class="absolute top-4 left-4 flex gap-1.5 z-0">
-              <div class="w-2 h-2 rounded-full bg-white"></div>
-              <div class="w-2 h-2 rounded-full bg-white"></div>
-            </div>
-            <div
-              class="absolute -right-6 -bottom-6 text-[220px] font-black text-white opacity-40 leading-none select-none z-0"
-              style="font-family: Arial, sans-serif;">K</div>
-            <img src="mentor9.png" alt="Vikram Singh" class="relative z-10 w-48 object-contain drop-shadow-md"
-              style="max-height: 100%;" onerror="this.src='https://placehold.co/400x500/transparent/333?text=Image'" />
-          </div>
-          <div class="p-5 bg-white relative z-20">
-            <div class="flex justify-between items-start mb-1 gap-2">
-              <h3 class="font-bold text-lg text-foreground leading-tight">Vikram Singh</h3>
-
-            </div>
-            <p class="text-xs text-muted-foreground truncate">Cloud DevOps</p>
-          </div>
-        </div>
-
-        <!-- Mentor 10 -->
-        <div
-          class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] flex-none snap-start rounded-xl overflow-hidden border border-border bg-card hover:shadow-lg transition-shadow">
+          <!-- Mentor 1 -->
           <div
-            class="h-64 bg-gradient-to-br from-[#ffc8b0] to-[#ffe3d5] relative flex items-end justify-center overflow-hidden">
-            <div class="absolute top-4 left-4 flex gap-1.5 z-0">
-              <div class="w-2 h-2 rounded-full bg-white"></div>
-              <div class="w-2 h-2 rounded-full bg-white"></div>
+            class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] flex-none snap-start rounded-xl overflow-hidden border border-border bg-card hover:shadow-lg transition-shadow">
+            <div class="h-64 bg-[#f1f6f5] relative flex items-end justify-center overflow-hidden">
+              <div class="absolute top-4 left-4 flex gap-1.5 z-0">
+                <div class="w-2 h-2 rounded-full bg-white"></div>
+                <div class="w-2 h-2 rounded-full bg-white"></div>
+              </div>
+              <div
+                class="absolute -right-6 -bottom-6 text-[220px] font-black text-white opacity-40 leading-none select-none z-0"
+                style="font-family: Arial, sans-serif;">K</div>
+              <img src="mentor1.png" alt="Priyash Nigam" class="relative z-10 w-48 object-contain drop-shadow-md"
+                style="max-height: 100%;"
+                onerror="this.src='https://placehold.co/400x500/transparent/333?text=Image'" />
             </div>
+            <div class="p-5 bg-white relative z-20">
+              <div class="flex justify-between items-start mb-1 gap-2">
+                <h3 class="font-bold text-lg text-foreground leading-tight">Priyash Nigam</h3>
+
+              </div>
+              <p class="text-xs text-muted-foreground truncate">CEO, Execube Digital | Fractional CMO |...</p>
+            </div>
+          </div>
+
+          <!-- Mentor 2 -->
+          <div
+            class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] flex-none snap-start rounded-xl overflow-hidden border border-border bg-card hover:shadow-lg transition-shadow">
+            <div class="h-64 bg-[#f1f6f5] relative flex items-end justify-center overflow-hidden">
+              <div class="absolute top-4 left-4 flex gap-1.5 z-0">
+                <div class="w-2 h-2 rounded-full bg-white"></div>
+                <div class="w-2 h-2 rounded-full bg-white"></div>
+              </div>
+              <div
+                class="absolute -right-6 -bottom-6 text-[220px] font-black text-white opacity-40 leading-none select-none z-0"
+                style="font-family: Arial, sans-serif;">K</div>
+              <img src="mentor2.png" alt="Gaurav Thadani" class="relative z-10 w-48 object-contain drop-shadow-md"
+                style="max-height: 100%;"
+                onerror="this.src='https://placehold.co/400x500/transparent/333?text=Image'" />
+            </div>
+            <div class="p-5 bg-white relative z-20">
+              <div class="flex justify-between items-start mb-1 gap-2">
+                <h3 class="font-bold text-lg text-foreground leading-tight">Gaurav Thadani</h3>
+
+              </div>
+              <p class="text-xs text-muted-foreground truncate">Senior Software Developer</p>
+            </div>
+          </div>
+
+          <!-- Mentor 3 -->
+          <div
+            class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] flex-none snap-start rounded-xl overflow-hidden border border-border bg-card hover:shadow-lg transition-shadow">
+            <div class="h-64 bg-[#f1f6f5] relative flex items-end justify-center overflow-hidden">
+              <div class="absolute top-4 left-4 flex gap-1.5 z-0">
+                <div class="w-2 h-2 rounded-full bg-white"></div>
+                <div class="w-2 h-2 rounded-full bg-white"></div>
+              </div>
+              <div
+                class="absolute -right-6 -bottom-6 text-[220px] font-black text-white opacity-40 leading-none select-none z-0"
+                style="font-family: Arial, sans-serif;">K</div>
+              <img src="mentor3.png" alt="Ajay Kumar Gupta" class="relative z-10 w-48 object-contain drop-shadow-md"
+                style="max-height: 100%;"
+                onerror="this.src='https://placehold.co/400x500/transparent/333?text=Image'" />
+            </div>
+            <div class="p-5 bg-white relative z-20">
+              <div class="flex justify-between items-start mb-1 gap-2">
+                <h3 class="font-bold text-lg text-foreground leading-tight">Ajay Kumar Gupta</h3>
+
+              </div>
+              <p class="text-xs text-muted-foreground truncate">Senior Data Scientist</p>
+            </div>
+          </div>
+
+          <!-- Mentor 4 -->
+          <div
+            class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] flex-none snap-start rounded-xl overflow-hidden border border-border bg-card hover:shadow-lg transition-shadow">
+            <div class="h-64 bg-[#f1f6f5] relative flex items-end justify-center overflow-hidden">
+              <div class="absolute top-4 left-4 flex gap-1.5 z-0">
+                <div class="w-2 h-2 rounded-full bg-white"></div>
+                <div class="w-2 h-2 rounded-full bg-white"></div>
+              </div>
+              <div
+                class="absolute -right-6 -bottom-6 text-[220px] font-black text-white opacity-40 leading-none select-none z-0"
+                style="font-family: Arial, sans-serif;">K</div>
+              <img src="mentor4.png" alt="Ekta" class="relative z-10 w-48 object-contain drop-shadow-md"
+                style="max-height: 100%;"
+                onerror="this.src='https://placehold.co/400x500/transparent/333?text=Image'" />
+            </div>
+            <div class="p-5 bg-white relative z-20">
+              <div class="flex justify-between items-start mb-1 gap-2">
+                <h3 class="font-bold text-lg text-foreground leading-tight">Ekta</h3>
+
+              </div>
+              <p class="text-xs text-muted-foreground truncate">Data Scientist</p>
+            </div>
+          </div>
+
+          <!-- Mentor 5 -->
+          <div
+            class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] flex-none snap-start rounded-xl overflow-hidden border border-border bg-card hover:shadow-lg transition-shadow">
+            <div class="h-64 bg-[#f1f6f5] relative flex items-end justify-center overflow-hidden">
+              <div class="absolute top-4 left-4 flex gap-1.5 z-0">
+                <div class="w-2 h-2 rounded-full bg-white"></div>
+                <div class="w-2 h-2 rounded-full bg-white"></div>
+              </div>
+              <div
+                class="absolute -right-6 -bottom-6 text-[220px] font-black text-white opacity-40 leading-none select-none z-0"
+                style="font-family: Arial, sans-serif;">K</div>
+              <img src="mentor5.png" alt="Rohan Sharma" class="relative z-10 w-48 object-contain drop-shadow-md"
+                style="max-height: 100%;"
+                onerror="this.src='https://placehold.co/400x500/transparent/333?text=Image'" />
+            </div>
+            <div class="p-5 bg-white relative z-20">
+              <div class="flex justify-between items-start mb-1 gap-2">
+                <h3 class="font-bold text-lg text-foreground leading-tight">Rohan Sharma</h3>
+
+              </div>
+              <p class="text-xs text-muted-foreground truncate">Product Designer</p>
+            </div>
+          </div>
+
+          <!-- Mentor 6 -->
+          <div
+            class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] flex-none snap-start rounded-xl overflow-hidden border border-border bg-card hover:shadow-lg transition-shadow">
+            <div class="h-64 bg-[#f1f6f5] relative flex items-end justify-center overflow-hidden">
+              <div class="absolute top-4 left-4 flex gap-1.5 z-0">
+                <div class="w-2 h-2 rounded-full bg-white"></div>
+                <div class="w-2 h-2 rounded-full bg-white"></div>
+              </div>
+              <div
+                class="absolute -right-6 -bottom-6 text-[220px] font-black text-white opacity-40 leading-none select-none z-0"
+                style="font-family: Arial, sans-serif;">K</div>
+              <img src="mentor6.png" alt="Neha Singh" class="relative z-10 w-48 object-contain drop-shadow-md"
+                style="max-height: 100%;"
+                onerror="this.src='https://placehold.co/400x500/transparent/333?text=Image'" />
+            </div>
+            <div class="p-5 bg-white relative z-20">
+              <div class="flex justify-between items-start mb-1 gap-2">
+                <h3 class="font-bold text-lg text-foreground leading-tight">Neha Singh</h3>
+
+              </div>
+              <p class="text-xs text-muted-foreground truncate">UI/UX Lead</p>
+            </div>
+          </div>
+
+          <!-- Mentor 7 -->
+          <div
+            class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] flex-none snap-start rounded-xl overflow-hidden border border-border bg-card hover:shadow-lg transition-shadow">
+            <div class="h-64 bg-[#f1f6f5] relative flex items-end justify-center overflow-hidden">
+              <div class="absolute top-4 left-4 flex gap-1.5 z-0">
+                <div class="w-2 h-2 rounded-full bg-white"></div>
+                <div class="w-2 h-2 rounded-full bg-white"></div>
+              </div>
+              <div
+                class="absolute -right-6 -bottom-6 text-[220px] font-black text-white opacity-40 leading-none select-none z-0"
+                style="font-family: Arial, sans-serif;">K</div>
+              <img src="mentor7.png" alt="Amit Kumar" class="relative z-10 w-48 object-contain drop-shadow-md"
+                style="max-height: 100%;"
+                onerror="this.src='https://placehold.co/400x500/transparent/333?text=Image'" />
+            </div>
+            <div class="p-5 bg-white relative z-20">
+              <div class="flex justify-between items-start mb-1 gap-2">
+                <h3 class="font-bold text-lg text-foreground leading-tight">Amit Kumar</h3>
+
+              </div>
+              <p class="text-xs text-muted-foreground truncate">Backend Architect</p>
+            </div>
+          </div>
+
+          <!-- Mentor 8 -->
+          <div
+            class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] flex-none snap-start rounded-xl overflow-hidden border border-border bg-card hover:shadow-lg transition-shadow">
+            <div class="h-64 bg-[#f1f6f5] relative flex items-end justify-center overflow-hidden">
+              <div class="absolute top-4 left-4 flex gap-1.5 z-0">
+                <div class="w-2 h-2 rounded-full bg-white"></div>
+                <div class="w-2 h-2 rounded-full bg-white"></div>
+              </div>
+              <div
+                class="absolute -right-6 -bottom-6 text-[220px] font-black text-white opacity-40 leading-none select-none z-0"
+                style="font-family: Arial, sans-serif;">K</div>
+              <img src="mentor8.png" alt="Priya Patel" class="relative z-10 w-48 object-contain drop-shadow-md"
+                style="max-height: 100%;"
+                onerror="this.src='https://placehold.co/400x500/transparent/333?text=Image'" />
+            </div>
+            <div class="p-5 bg-white relative z-20">
+              <div class="flex justify-between items-start mb-1 gap-2">
+                <h3 class="font-bold text-lg text-foreground leading-tight">Priya Patel</h3>
+
+              </div>
+              <p class="text-xs text-muted-foreground truncate">Frontend Team Lead</p>
+            </div>
+          </div>
+
+          <!-- Mentor 9 -->
+          <div
+            class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] flex-none snap-start rounded-xl overflow-hidden border border-border bg-card hover:shadow-lg transition-shadow">
+            <div class="h-64 bg-[#f1f6f5] relative flex items-end justify-center overflow-hidden">
+              <div class="absolute top-4 left-4 flex gap-1.5 z-0">
+                <div class="w-2 h-2 rounded-full bg-white"></div>
+                <div class="w-2 h-2 rounded-full bg-white"></div>
+              </div>
+              <div
+                class="absolute -right-6 -bottom-6 text-[220px] font-black text-white opacity-40 leading-none select-none z-0"
+                style="font-family: Arial, sans-serif;">K</div>
+              <img src="mentor9.png" alt="Vikram Singh" class="relative z-10 w-48 object-contain drop-shadow-md"
+                style="max-height: 100%;"
+                onerror="this.src='https://placehold.co/400x500/transparent/333?text=Image'" />
+            </div>
+            <div class="p-5 bg-white relative z-20">
+              <div class="flex justify-between items-start mb-1 gap-2">
+                <h3 class="font-bold text-lg text-foreground leading-tight">Vikram Singh</h3>
+
+              </div>
+              <p class="text-xs text-muted-foreground truncate">Cloud DevOps</p>
+            </div>
+          </div>
+
+          <!-- Mentor 10 -->
+          <div
+            class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] flex-none snap-start rounded-xl overflow-hidden border border-border bg-card hover:shadow-lg transition-shadow">
             <div
-              class="absolute -right-6 -bottom-6 text-[220px] font-black text-white opacity-40 leading-none select-none z-0"
-              style="font-family: Arial, sans-serif;">K</div>
-            <img src="mentor10.png" alt="Sneha Gupta" class="relative z-10 w-48 object-contain drop-shadow-md"
-              style="max-height: 100%;" onerror="this.src='https://placehold.co/400x500/transparent/333?text=Image'" />
-          </div>
-          <div class="p-5 bg-white relative z-20">
-            <div class="flex justify-between items-start mb-1 gap-2">
-              <h3 class="font-bold text-lg text-foreground leading-tight">Sneha Gupta</h3>
-
+              class="h-64 bg-gradient-to-br from-[#ffc8b0] to-[#ffe3d5] relative flex items-end justify-center overflow-hidden">
+              <div class="absolute top-4 left-4 flex gap-1.5 z-0">
+                <div class="w-2 h-2 rounded-full bg-white"></div>
+                <div class="w-2 h-2 rounded-full bg-white"></div>
+              </div>
+              <div
+                class="absolute -right-6 -bottom-6 text-[220px] font-black text-white opacity-40 leading-none select-none z-0"
+                style="font-family: Arial, sans-serif;">K</div>
+              <img src="mentor10.png" alt="Sneha Gupta" class="relative z-10 w-48 object-contain drop-shadow-md"
+                style="max-height: 100%;"
+                onerror="this.src='https://placehold.co/400x500/transparent/333?text=Image'" />
             </div>
-            <p class="text-xs text-muted-foreground truncate">Full Stack Mentor</p>
+            <div class="p-5 bg-white relative z-20">
+              <div class="flex justify-between items-start mb-1 gap-2">
+                <h3 class="font-bold text-lg text-foreground leading-tight">Sneha Gupta</h3>
+
+              </div>
+              <p class="text-xs text-muted-foreground truncate">Full Stack Mentor</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTASection -->
+    <section id="enroll" class="py-20 bg-background">
+      <div class="max-w-2xl mx-auto px-4 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold text-foreground">
+          Start Your Coding Journey Today!
+        </h2>
+        <p class="mt-3 text-muted-foreground">
+          Join thousands of learners and upgrade your skills.
+        </p>
+        <a href="#enroll"
+          class="mt-6 inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-3 rounded-lg font-semibold text-lg hover:opacity-90 transition-opacity">
+          Start Learning Now &gt;
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-foreground text-primary-foreground py-12 border-t border-border">
+      <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+
+        <!-- Brand & Description -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-2 font-bold text-2xl">
+            <i data-lucide="flame" class="text-primary" style="width: 28px; height: 28px; stroke-width: 2.5;"></i>
+            <span class="font-extrabold tracking-wide text-white" style="font-family: Arial, sans-serif;">DNK
+              SKILLS</span>
+          </div>
+          <p class="text-[15px] text-muted-foreground leading-relaxed mt-2">
+            Empowering the future through innovative education and technology solutions.
+          </p>
+        </div>
+
+        <!-- Training Programs -->
+        <div>
+          <h4 class="font-bold text-lg text-white mb-5">Training Programs</h4>
+          <ul class="space-y-3 text-[15px] text-muted-foreground">
+            <li><a href="training/index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i
+                  data-lucide="chevron-right" class="w-4 h-4"></i> Web Development</a></li>
+            <li><a href="training/index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i
+                  data-lucide="chevron-right" class="w-4 h-4"></i> App Development</a></li>
+            <li><a href="training/index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i
+                  data-lucide="chevron-right" class="w-4 h-4"></i> Data Science</a></li>
+            <li><a href="training/index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i
+                  data-lucide="chevron-right" class="w-4 h-4"></i> DSA with C++</a></li>
+            <li><a href="training/index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i
+                  data-lucide="chevron-right" class="w-4 h-4"></i> DSA with Java</a></li>
+            <li><a href="training/index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i
+                  data-lucide="chevron-right" class="w-4 h-4"></i> AI / ML</a></li>
+          </ul>
+        </div>
+
+        <!-- Courses -->
+        <div>
+          <h4 class="font-bold text-lg text-white mb-5">Courses</h4>
+          <ul class="space-y-3 text-[15px] text-muted-foreground">
+            <li><a href="courses/index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i
+                  data-lucide="chevron-right" class="w-4 h-4"></i> C Programming</a></li>
+            <li><a href="courses/index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i
+                  data-lucide="chevron-right" class="w-4 h-4"></i> C++ Programming</a></li>
+            <li><a href="courses/index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i
+                  data-lucide="chevron-right" class="w-4 h-4"></i> Python Programming</a></li>
+            <li><a href="courses/index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i
+                  data-lucide="chevron-right" class="w-4 h-4"></i> Java Programming</a></li>
+            <li><a href="courses/index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i
+                  data-lucide="chevron-right" class="w-4 h-4"></i> JavaScript</a></li>
+            <li class="pt-2"><a href="courses/index.html"
+                class="text-primary hover:text-primary-foreground transition-colors flex items-center gap-2 font-semibold">View
+                More <i data-lucide="arrow-right" class="w-4 h-4"></i></a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Us -->
+        <div>
+          <h4 class="font-bold text-lg text-white mb-5">Contact Us</h4>
+          <ul class="space-y-4 text-[15px] text-muted-foreground">
+            <li class="flex items-start gap-3">
+              <i data-lucide="map-pin" class="w-5 h-5 text-primary shrink-0 mt-0.5"></i>
+              <span>LPU, Jalandhar-Delhi, G.T. Road,<br>Phagwara, Punjab (INDIA)</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <i data-lucide="mail" class="w-5 h-5 text-primary shrink-0"></i>
+              <a href="mailto:support@dnkskill.com"
+                class="hover:text-primary transition-colors opacity-90">support@dnkskill.com</a>
+            </li>
+            <li class="flex items-center gap-3">
+              <i data-lucide="phone" class="w-5 h-5 text-primary shrink-0"></i>
+              <a href="tel:8002318046" class="hover:text-primary transition-colors opacity-90">8002318046</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Map Embed -->
+        <div
+          class="h-48 sm:h-full min-h-[180px] w-full rounded-xl overflow-hidden shadow-lg border border-primary-foreground/10">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3410.741036306353!2d75.70051!3d31.2536005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a5f5e9c489cf3%3A0x4049a5409d53c300!2sLovely%20Professional%20University!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="max-w-7xl mx-auto px-4 mt-12 pt-6 border-t border-primary-foreground/10">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
+          <div class="text-center md:text-left">
+            &copy; 2026 DNK SKILLS. All rights reserved.
+          </div>
+          <div class="font-bold text-center tracking-wider text-primary-foreground/80">
+            SIYADNK SOFTWARE PRIVATE LIMITED
           </div>
         </div>
-
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- CTASection -->
-  <section id="enroll" class="py-20 bg-background">
-    <div class="max-w-2xl mx-auto px-4 text-center">
-      <h2 class="text-2xl md:text-3xl font-bold text-foreground">
-        Start Your Coding Journey Today!
-      </h2>
-      <p class="mt-3 text-muted-foreground">
-        Join thousands of learners and upgrade your skills.
-      </p>
-      <a href="#enroll"
-        class="mt-6 inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-3 rounded-lg font-semibold text-lg hover:opacity-90 transition-opacity">
-        Start Learning Now &gt;
-      </a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-foreground text-primary-foreground py-12 border-t border-border">
-    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
-      
-      <!-- Brand & Description -->
-      <div class="space-y-4">
-        <div class="flex items-center gap-2 font-bold text-2xl">
-          <i data-lucide="flame" class="text-primary" style="width: 28px; height: 28px; stroke-width: 2.5;"></i>
-          <span class="font-extrabold tracking-wide text-white" style="font-family: Arial, sans-serif;">DNK SKILLS</span>
-        </div>
-        <p class="text-[15px] text-muted-foreground leading-relaxed mt-2">
-          Empowering the future through innovative education and technology solutions.
-        </p>
-      </div>
-
-      <!-- Training Programs -->
-      <div>
-        <h4 class="font-bold text-lg text-white mb-5">Training Programs</h4>
-        <ul class="space-y-3 text-[15px] text-muted-foreground">
-          <li><a href="training.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-4 h-4"></i> Web Development</a></li>
-          <li><a href="training.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-4 h-4"></i> App Development</a></li>
-          <li><a href="training.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-4 h-4"></i> Data Science</a></li>
-          <li><a href="training.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-4 h-4"></i> DSA with C++</a></li>
-          <li><a href="training.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-4 h-4"></i> DSA with Java</a></li>
-          <li><a href="training.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-4 h-4"></i> AI / ML</a></li>
-        </ul>
-      </div>
-
-      <!-- Courses -->
-      <div>
-        <h4 class="font-bold text-lg text-white mb-5">Courses</h4>
-        <ul class="space-y-3 text-[15px] text-muted-foreground">
-          <li><a href="courses.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-4 h-4"></i> C Programming</a></li>
-          <li><a href="courses.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-4 h-4"></i> C++ Programming</a></li>
-          <li><a href="courses.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-4 h-4"></i> Python Programming</a></li>
-          <li><a href="courses.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-4 h-4"></i> Java Programming</a></li>
-          <li><a href="courses.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-4 h-4"></i> JavaScript</a></li>
-          <li class="pt-2"><a href="courses.html" class="text-primary hover:text-primary-foreground transition-colors flex items-center gap-2 font-semibold">View More <i data-lucide="arrow-right" class="w-4 h-4"></i></a></li>
-        </ul>
-      </div>
-
-      <!-- Contact Us -->
-      <div>
-        <h4 class="font-bold text-lg text-white mb-5">Contact Us</h4>
-        <ul class="space-y-4 text-[15px] text-muted-foreground">
-          <li class="flex items-start gap-3">
-            <i data-lucide="map-pin" class="w-5 h-5 text-primary shrink-0 mt-0.5"></i>
-            <span>LPU, Jalandhar-Delhi, G.T. Road,<br>Phagwara, Punjab (INDIA)</span>
-          </li>
-          <li class="flex items-center gap-3">
-            <i data-lucide="mail" class="w-5 h-5 text-primary shrink-0"></i>
-            <a href="mailto:support@dnkskill.com" class="hover:text-primary transition-colors opacity-90">support@dnkskill.com</a>
-          </li>
-          <li class="flex items-center gap-3">
-            <i data-lucide="phone" class="w-5 h-5 text-primary shrink-0"></i>
-            <a href="tel:8002318046" class="hover:text-primary transition-colors opacity-90">8002318046</a>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Map Embed -->
-      <div class="h-48 sm:h-full min-h-[180px] w-full rounded-xl overflow-hidden shadow-lg border border-primary-foreground/10">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3410.741036306353!2d75.70051!3d31.2536005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a5f5e9c489cf3%3A0x4049a5409d53c300!2sLovely%20Professional%20University!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-
-    </div>
-
-    <!-- Bottom Bar -->
-    <div class="max-w-7xl mx-auto px-4 mt-12 pt-6 border-t border-primary-foreground/10">
-      <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
-        <div class="text-center md:text-left">
-          &copy; 2026 DNK SKILLS. All rights reserved.
-        </div>
-        <div class="font-bold text-center tracking-wider text-primary-foreground/80">
-          SIYADNK SOFTWARE PRIVATE LIMITED
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- AOS Script Initialization -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- AOS Script Initialization -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-

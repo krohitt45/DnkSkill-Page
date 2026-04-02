@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DNK SKILL - Start Learning Now</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- External JS (Tailwind Config + App Logic) -->
+  <script src="../js/script.js"></script>
+
+  <!-- AOS Animations CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Lucide Icons via CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="min-h-screen bg-background text-foreground overflow-x-hidden w-full">
+
+  <!-- Navbar -->
+  <nav class="sticky top-0 z-50 bg-background border-b border-border">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2 font-bold text-xl text-foreground">
+        <i data-lucide="flame" class="text-primary" style="width: 28px; height: 28px; stroke-width: 2.5;"></i>
+        <span class="font-extrabold tracking-wide text-foreground"
+          style="font-family: Arial, sans-serif; font-size: 22px;">DNK SKILLS</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="../index.html" class="text-foreground hover:text-primary transition-colors font-medium">Home</a>
+        <a href="../training/index.html" class="text-foreground hover:text-primary transition-colors font-medium">Training</a>
+        <a href="index.html" class="text-primary hover:text-primary transition-colors font-medium">Courses</a>
+        <a href="../about/index.html" class="text-foreground hover:text-primary transition-colors font-medium">About</a>
+        <a href="#enroll"
+          class="bg-primary text-primary-foreground px-6 py-2.5 rounded-lg font-semibold hover:opacity-90 transition-opacity">
+          Start Learning &gt;
+        </a>
+      </div>
+      <button id="mobile-menu-btn" class="md:hidden">
+        <i id="menu-icon" data-lucide="menu" style="width: 24px; height: 24px;"></i>
+        <i id="close-icon" data-lucide="x" style="width: 24px; height: 24px;" class="hidden"></i>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-border px-4 pb-4 flex-col gap-3">
+      <a href="../index.html" class="py-2 text-foreground font-medium mobile-link">Home</a>
+      <a href="../training/index.html" class="py-2 text-foreground font-medium mobile-link">Training</a>
+      <a href="index.html" class="py-2 text-primary font-medium mobile-link">Courses</a>
+      <a href="../about/index.html" class="py-2 text-foreground font-medium mobile-link">About</a>
+      <a href="#enroll"
+        class="bg-primary text-primary-foreground px-6 py-2.5 rounded-lg font-semibold text-center mobile-link">
+        Start Learning &gt;
+      </a>
+    </div>
+  </nav>
+
+
+  <main class="w-full flex-grow">
+    <!-- Hero Banner for Courses (DNK Style) -->
+    <section class="bg-primary py-16 md:py-24 w-full border-b border-primary/20">
+      <div class="max-w-7xl mx-auto px-4 text-center" data-aos="zoom-in" data-aos-duration="800">
+        <h1 class="text-3xl md:text-5xl font-bold text-primary-foreground leading-tight mb-4 tracking-tight"
+          style="font-family: Arial, sans-serif;">
+          Master <span class="text-secondary">In-Demand Tech Skills</span>
+        </h1>
+        <p class="text-base md:text-[18px] text-primary-foreground/90 max-w-2xl mx-auto font-medium">
+          Industry-designed programs with hands-on projects and career support
+        </p>
+      </div>
+    </section>
+
+    <!-- Courses Section from Index -->
+    <section class="py-12 md:py-16 bg-background">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10">
+          <!-- C Programming Card -->
+          <div
+            class="border border-border rounded-xl p-6 hover:shadow-lg transition-shadow bg-card flex flex-col h-full"
+            data-aos="fade-up">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center shrink-0">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt="C"
+                  class="w-6 h-6" />
+              </div>
+              <h3 class="font-bold text-[19px] text-[#1f2937] tracking-tight">C Programming</h3>
+            </div>
+            <p class="text-sm text-foreground mb-3 leading-relaxed opacity-90 sm:min-h-[72px]">
+              Learn C programming: variables, loops, functions, pointers, memory management, structures, file handling,
+              and real-world projects.
+            </p>
+            <ul class="space-y-1.5 mb-1 flex-grow">
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i>
+                Introduction to C Programming</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> Data
+                Types and Variables</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i>
+                Operators and Expressions</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> Control
+                Structures</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i>
+                Functions</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> Arrays
+                and Strings</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> Pointers
+              </li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i>
+                Structures and Unions</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> File
+                Handling</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> Dynamic
+                Memory Allocation</li>
+            </ul>
+            <div class="mt-auto flex flex-col justify-end pt-5">
+              <div class="flex items-center justify-between text-muted-foreground text-sm font-medium mb-4">
+                <div class="flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4"></i> 6 Week</div>
+                <div class="flex items-center gap-1.5 text-primary"><i data-lucide="award" class="w-4 h-4"
+                    fill="currentColor"></i> Certificate</div>
+              </div>
+              <a href="c-programming/index.html" class="w-full block text-center bg-primary text-primary-foreground py-2 rounded-lg font-bold hover:opacity-90 transition-opacity text-sm shadow-sm">Enroll Now</a>
+            </div>
+          </div>
+
+          <!-- C++ Programming Card -->
+          <div
+            class="border border-border rounded-xl p-6 hover:shadow-lg transition-shadow bg-card flex flex-col h-full"
+            data-aos="fade-up">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center shrink-0">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
+                  alt="C++" class="w-6 h-6" />
+              </div>
+              <h3 class="font-bold text-[19px] text-[#1f2937] tracking-tight">C++ Programming</h3>
+            </div>
+            <p class="text-sm text-foreground mb-3 leading-relaxed opacity-90 sm:min-h-[72px]">
+              Learn object-oriented programming with C++, including classes, templates, STL, and modern C++ features for
+              high-performance applications.
+            </p>
+            <ul class="space-y-1.5 mb-1 flex-grow">
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i>
+                Introduction to C++</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> Data
+                Types, Variables, and Operators</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> Control
+                Structures</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i>
+                Functions in C++</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> OOPS
+                Concepts</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> Classes
+                and Objects</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i>
+                Inheritance</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i>
+                Polymorphism</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> Pointers
+                and Memory Management</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> File
+                Handling and STL</li>
+            </ul>
+            <div class="mt-auto flex flex-col justify-end pt-5">
+              <div class="flex items-center justify-between text-muted-foreground text-sm font-medium mb-4">
+                <div class="flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4"></i> 6 Week</div>
+                <div class="flex items-center gap-1.5 text-primary"><i data-lucide="award" class="w-4 h-4"
+                    fill="currentColor"></i> Certificate</div>
+              </div>
+              <a href="cpp-programming/index.html" class="w-full block text-center bg-primary text-primary-foreground py-2 rounded-lg font-bold hover:opacity-90 transition-opacity text-sm shadow-sm">Enroll Now</a>
+            </div>
+          </div>
+
+          <!-- Python Programming Card -->
+          <div
+            class="border border-border rounded-xl p-6 hover:shadow-lg transition-shadow bg-card flex flex-col h-full"
+            data-aos="fade-up">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center shrink-0">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                  alt="Python" class="w-6 h-6" />
+              </div>
+              <h3 class="font-bold text-[19px] text-[#1f2937] tracking-tight">Python Programming</h3>
+            </div>
+            <p class="text-sm text-foreground mb-3 leading-relaxed opacity-90 sm:min-h-[72px]">
+              Learn Python from scratch to advanced level: variables, loops, functions, OOP, file handling, libraries,
+              APIs, and real-world projects.
+            </p>
+            <ul class="space-y-1.5 mb-1 flex-grow">
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i>
+                Introduction to Python</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i>
+                Variables, Data Types, and Operators</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> Control
+                Flow</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i>
+                Functions and Modules</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> String
+                Handling</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> File
+                Handling</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i>
+                Exception Handling</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> OOPS
+                Concepts</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> Popular
+                Libraries</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i>
+                Project-Based Learning</li>
+            </ul>
+            <div class="mt-auto flex flex-col justify-end pt-5">
+              <div class="flex items-center justify-between text-muted-foreground text-sm font-medium mb-4">
+                <div class="flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4"></i> 6 Week</div>
+                <div class="flex items-center gap-1.5 text-primary"><i data-lucide="award" class="w-4 h-4"
+                    fill="currentColor"></i> Certificate</div>
+              </div>
+              <a href="python-programming/index.html" class="w-full block text-center bg-primary text-primary-foreground py-2 rounded-lg font-bold hover:opacity-90 transition-opacity text-sm shadow-sm">Enroll Now</a>
+            </div>
+          </div>
+
+          <!-- Java Programming Card -->
+          <div
+            class="border border-border rounded-xl p-6 hover:shadow-lg transition-shadow bg-card flex flex-col h-full"
+            data-aos="fade-up">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center shrink-0">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java"
+                  class="w-6 h-6" />
+              </div>
+              <h3 class="font-bold text-[19px] text-[#1f2937] tracking-tight">Java Programming</h3>
+            </div>
+            <p class="text-sm text-foreground mb-3 leading-relaxed opacity-90 sm:min-h-[72px]">
+              Learn Java from basics to advanced: OOP concepts, arrays, collections, file handling, JDBC, and build
+              real-world applications.
+            </p>
+            <ul class="space-y-1.5 mb-1 flex-grow">
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i>
+                Introduction to Java</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> Data
+                Types, Variables, and Operators</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> Control
+                Statements</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> OOPS
+                Concepts</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> Classes
+                and Objects</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i>
+                Inheritance and Interfaces</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i>
+                Exception Handling</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> Arrays
+                and Strings</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> File I/O
+                and Java Packages</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i>
+                Project-Based Learning</li>
+            </ul>
+            <div class="mt-auto flex flex-col justify-end pt-5">
+              <div class="flex items-center justify-between text-muted-foreground text-sm font-medium mb-4">
+                <div class="flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4"></i> 6 Week</div>
+                <div class="flex items-center gap-1.5 text-primary"><i data-lucide="award" class="w-4 h-4"
+                    fill="currentColor"></i> Certificate</div>
+              </div>
+              <a href="java-programming/index.html" class="w-full block text-center bg-primary text-primary-foreground py-2 rounded-lg font-bold hover:opacity-90 transition-opacity text-sm shadow-sm">Enroll Now</a>
+            </div>
+          </div>
+
+          <!-- JavaScript Card -->
+          <div
+            class="border border-border rounded-xl p-6 hover:shadow-lg transition-shadow bg-card flex flex-col h-full"
+            data-aos="fade-up">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center shrink-0">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                  alt="JS" class="w-6 h-6" />
+              </div>
+              <h3 class="font-bold text-[19px] text-[#1f2937] tracking-tight">JavaScript</h3>
+            </div>
+            <p class="text-sm text-foreground mb-3 leading-relaxed opacity-90 sm:min-h-[72px]">
+              Master JavaScript fundamentals, DOM manipulation, ES6+, and async programmingÃ¢â‚¬â€build real-world
+              interactive web applications.
+            </p>
+            <ul class="space-y-1.5 mb-1 flex-grow">
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i>
+                Introduction to JavaScript</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i>
+                Variables, Data Types, and Operators</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> Control
+                Flow and Conditionals</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i>
+                Functions and Scope</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> Arrays
+                and Objects</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> DOM
+                Manipulation</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> ES6+
+                Features</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i>
+                Asynchronous JavaScript</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> Error
+                Handling and Debugging</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i>
+                JavaScript in Web Development</li>
+            </ul>
+            <div class="mt-auto flex flex-col justify-end pt-5">
+              <div class="flex items-center justify-between text-muted-foreground text-sm font-medium mb-4">
+                <div class="flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4"></i> 6 Week</div>
+                <div class="flex items-center gap-1.5 text-primary"><i data-lucide="award" class="w-4 h-4"
+                    fill="currentColor"></i> Certificate</div>
+              </div>
+              <a href="javascript/index.html" class="w-full block text-center bg-primary text-primary-foreground py-2 rounded-lg font-bold hover:opacity-90 transition-opacity text-sm shadow-sm">Enroll Now</a>
+            </div>
+          </div>
+
+          <!-- PHP Programming Card -->
+          <div
+            class="border border-border rounded-xl p-6 hover:shadow-lg transition-shadow bg-card flex flex-col h-full"
+            data-aos="fade-up">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center shrink-0">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP"
+                  class="w-6 h-6" />
+              </div>
+              <h3 class="font-bold text-[19px] text-[#1f2937] tracking-tight">PHP Programming</h3>
+            </div>
+            <p class="text-sm text-foreground mb-3 leading-relaxed opacity-90 sm:min-h-[72px]">
+              Learn PHP from basics to advanced: syntax, forms, sessions, MySQL integration, file handling, and
+              full-stack web development projects.
+            </p>
+            <ul class="space-y-1.5 mb-1 flex-grow">
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i>
+                Introduction to PHP</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i>
+                Variables, Data Types & Operators</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> Control
+                Structures</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i>
+                Functions in PHP</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> Arrays &
+                Strings</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> Forms
+                and User Input</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> File
+                Handling in PHP</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> Sessions
+                & Cookies</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> Database
+                Integration</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i>
+                Project-Based Learning</li>
+            </ul>
+            <div class="mt-auto flex flex-col justify-end pt-5">
+              <div class="flex items-center justify-between text-muted-foreground text-sm font-medium mb-4">
+                <div class="flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4"></i> 6 Week</div>
+                <div class="flex items-center gap-1.5 text-primary"><i data-lucide="award" class="w-4 h-4"
+                    fill="currentColor"></i> Certificate</div>
+              </div>
+              <a href="php-programming/index.html" class="w-full block text-center bg-primary text-primary-foreground py-2 rounded-lg font-bold hover:opacity-90 transition-opacity text-sm shadow-sm">Enroll Now</a>
+            </div>
+          </div>
+
+          <!-- Database Management Card -->
+          <div
+            class="border border-border rounded-xl p-6 hover:shadow-lg transition-shadow bg-card flex flex-col h-full"
+            data-aos="fade-up">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center shrink-0">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
+                  alt="MySQL" class="w-6 h-6" />
+              </div>
+              <h3 class="font-bold text-[19px] text-[#1f2937] tracking-tight">Database Management</h3>
+            </div>
+            <p class="text-sm text-foreground mb-3 leading-relaxed opacity-90 sm:min-h-[72px]">
+              Learn database fundamentals, SQL queries, normalization, ER diagrams, joins, indexing, transactions, and
+              build real-world relational database applications.
+            </p>
+            <ul class="space-y-1.5 mb-1 flex-grow">
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i>
+                Introduction to Databases</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> Database
+                Models</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> SQL
+                Basics</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> Joins
+                and Subqueries</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> ER
+                Diagrams & Schema Design</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i>
+                Normalization</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i>
+                Constraints & Indexing</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> Stored
+                Procedures & Triggers</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i>
+                Transactions & Concurrency</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> Project
+                & Case Studies</li>
+            </ul>
+            <div class="mt-auto flex flex-col justify-end pt-5">
+              <div class="flex items-center justify-between text-muted-foreground text-sm font-medium mb-4">
+                <div class="flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4"></i> 6 Week</div>
+                <div class="flex items-center gap-1.5 text-primary"><i data-lucide="award" class="w-4 h-4"
+                    fill="currentColor"></i> Certificate</div>
+              </div>
+              <a href="mysql/index.html" class="w-full block text-center bg-primary text-primary-foreground py-2 rounded-lg font-bold hover:opacity-90 transition-opacity text-sm shadow-sm">Enroll Now</a>
+            </div>
+          </div>
+
+          <!-- Mastering Microsoft Excel Card -->
+          <div
+            class="border border-border rounded-xl p-6 hover:shadow-lg transition-shadow bg-card flex flex-col h-full"
+            data-aos="fade-up">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center shrink-0 text-[#107c41]">
+                <i data-lucide="file-spreadsheet" class="w-6 h-6"></i>
+              </div>
+              <h3 class="font-bold text-[19px] text-[#1f2937] tracking-tight">Mastering Microsoft Excel</h3>
+            </div>
+            <p class="text-sm text-foreground mb-3 leading-relaxed opacity-90 sm:min-h-[72px]">
+              Master Microsoft Excel: formulas, functions, charts, pivot tables, data analysis, and automation with
+              practical business use cases and projects.
+            </p>
+            <ul class="space-y-1.5 mb-1 flex-grow">
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i>
+                Introduction to Excel Interface</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> Data
+                Entry & Formatting</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> Basic
+                Formulas & Functions</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> Advanced
+                Functions</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> Data
+                Validation & Cleaning</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> Sorting
+                & Filtering</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> Charts &
+                Visualizations</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> Pivot
+                Tables & Pivot Charts</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> Excel
+                Data Analysis Tools</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> Intro to
+                Excel Macros & Automation</li>
+            </ul>
+            <div class="mt-auto flex flex-col justify-end pt-5">
+              <div class="flex items-center justify-between text-muted-foreground text-sm font-medium mb-4">
+                <div class="flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4"></i> 6 Week</div>
+                <div class="flex items-center gap-1.5 text-primary"><i data-lucide="award" class="w-4 h-4"
+                    fill="currentColor"></i> Certificate</div>
+              </div>
+              <a href="excel/index.html" class="w-full block text-center bg-primary text-primary-foreground py-2 rounded-lg font-bold hover:opacity-90 transition-opacity text-sm shadow-sm">Enroll Now</a>
+            </div>
+          </div>
+
+          <!-- Computer Fundamentals Card -->
+          <div
+            class="border border-border rounded-xl p-6 hover:shadow-lg transition-shadow bg-card flex flex-col h-full"
+            data-aos="fade-up">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center shrink-0">
+                <i data-lucide="monitor" class="text-[#555] w-6 h-6"></i>
+              </div>
+              <h3 class="font-bold text-[19px] text-[#1f2937] tracking-tight">Computer Fundamentals</h3>
+            </div>
+            <p class="text-sm text-foreground mb-3 leading-relaxed opacity-90 sm:min-h-[72px]">
+              Learn essential computer skills: operating systems, file management, typing, internet usage, email, MS
+              Office, and digital safety basics.
+            </p>
+            <ul class="space-y-1.5 mb-1 flex-grow">
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i>
+                Introduction to Computers</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i>
+                Understanding Operating Systems</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> File &
+                Folder Management</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> Typing
+                Skills</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> Internet
+                Basics</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> Email &
+                Communication Tools</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i>
+                Introduction to Microsoft Word</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i>
+                Introduction to Microsoft Excel</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i>
+                Introduction to Microsoft PowerPoint</li>
+              <li class="flex items-start gap-2.5 text-[#374151] text-[15px] pb-1"><i data-lucide="check"
+                  class="text-primary shrink-0 mt-0.5" style="width: 18px; height: 18px;" stroke-width="2"></i> Digital
+                Safety & Best Practices</li>
+            </ul>
+            <div class="mt-auto flex flex-col justify-end pt-5">
+              <div class="flex items-center justify-between text-muted-foreground text-sm font-medium mb-4">
+                <div class="flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4"></i> 6 Week</div>
+                <div class="flex items-center gap-1.5 text-primary"><i data-lucide="award" class="w-4 h-4"
+                    fill="currentColor"></i> Certificate</div>
+              </div>
+              <a href="fundamentals/index.html" class="w-full block text-center bg-primary text-primary-foreground py-2 rounded-lg font-bold hover:opacity-90 transition-opacity text-sm shadow-sm">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learning Experience Section -->
+    <section class="max-w-7xl mx-auto px-4 py-24 border-t border-border mt-12 bg-background">
+      <div class="grid md:grid-cols-2 gap-16 items-center" data-aos="fade-up">
+        
+        <!-- Left Content -->
+        <div class="space-y-12">
+          <h2 class="text-3xl md:text-5xl font-black text-foreground tracking-tight leading-tight">
+            The DNK SKILLS <span class="text-primary block mt-2">Learning Experience</span>
+          </h2>
+          
+          <div class="space-y-8">
+            <!-- Item 1 -->
+            <div class="flex gap-6 items-start">
+              <div class="w-14 h-14 rounded-full bg-[#1e40af]/10 flex items-center justify-center shrink-0 shadow-sm border border-[#1e40af]/20">
+                <i data-lucide="code" class="w-7 h-7 text-[#1e40af]"></i>
+              </div>
+              <div class="pt-1">
+                <h3 class="text-xl font-bold text-foreground mb-1.5">Project-Based Curriculum</h3>
+                <p class="text-[17px] text-muted-foreground leading-relaxed">
+                  Build real applications during training that you can showcase in your portfolio
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="flex gap-6 items-start">
+              <div class="w-14 h-14 rounded-full bg-emerald-100 flex items-center justify-center shrink-0 shadow-sm border border-emerald-200">
+                <i data-lucide="user-check" class="w-7 h-7 text-emerald-600"></i>
+              </div>
+              <div class="pt-1">
+                <h3 class="text-xl font-bold text-foreground mb-1.5">Industry Mentor Support</h3>
+                <p class="text-[17px] text-muted-foreground leading-relaxed">
+                  Get guidance from professionals working at companies like Google, Amazon, and Microsoft
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="flex gap-6 items-start">
+              <div class="w-14 h-14 rounded-full bg-purple-100 flex items-center justify-center shrink-0 shadow-sm border border-purple-200">
+                <i data-lucide="briefcase" class="w-7 h-7 text-purple-600"></i>
+              </div>
+              <div class="pt-1">
+                <h3 class="text-xl font-bold text-foreground mb-1.5">Career Services</h3>
+                <p class="text-[17px] text-muted-foreground leading-relaxed">
+                  Resume reviews, mock interviews, and job placement assistance
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Certificate Mock Presentation -->
+        <div class="w-full relative group" data-aos="zoom-in" data-aos-delay="200">
+          <div class="bg-white border-8 border-gray-100 rounded-xl p-8 sm:p-10 shadow-2xl relative overflow-hidden flex flex-col items-center text-center transition-transform duration-500 group-hover:scale-[1.02]">
+            <!-- decorative corners -->
+            <div class="absolute top-0 right-0 w-48 h-48 bg-gradient-to-bl from-[#1e3a8a] to-transparent rounded-bl-full opacity-90 -z-0"></div>
+            <div class="absolute bottom-0 left-0 w-48 h-48 bg-gradient-to-tr from-primary to-transparent rounded-tr-full opacity-90 -z-0"></div>
+            
+            <div class="relative z-10 flex flex-col items-center mb-6 w-full">
+              <div class="flex items-center justify-between w-full mb-8">
+                 <div class="text-[10px] font-bold text-gray-400">REF NO. XXXX1212</div>
+                 <div class="text-center">
+                   <div class="w-12 h-12 border border-gray-300 mx-auto grid place-items-center mb-1 bg-gray-50 text-[8px] text-gray-400">QR</div>
+                   <div class="text-[8px] font-bold text-gray-500">Scan to Verify</div>
+                 </div>
+              </div>
+              
+              <div class="flex items-center gap-2 font-bold text-3xl mb-4">
+                <i data-lucide="flame" class="text-primary w-8 h-8 stroke-[2.5px]"></i>
+                <span class="font-extrabold tracking-wide text-[#1e3a8a] uppercase" style="font-family: Arial;">DNK SKILLS</span>
+              </div>
+              <p class="text-xl sm:text-2xl font-serif font-black tracking-widest text-[#1e3a8a] uppercase mb-1 drop-shadow-sm">Certificate of Completion</p>
+              <p class="text-sm font-bold text-[#b45309] uppercase tracking-wider mb-8">This certificate is proudly presented to</p>
+              
+              <div class="w-full flex justify-center mb-6">
+                <h3 class="text-2xl sm:text-3xl font-black text-gray-800 border-b-2 border-gray-400 border-dashed pb-2 w-[80%]">Rohit Kumar</h3>
+              </div>
+              
+              <p class="text-[15px] sm:text-[17px] text-gray-600 mb-10 max-w-sm leading-relaxed font-serif">
+                Certified for successfully completing the <br><span class="font-bold text-gray-800">8-week Web Development Program</span>
+              </p>
+              
+              <div class="w-full flex justify-between items-end border-t border-gray-200 pt-8 mt-auto md:px-4">
+                <div class="text-center w-1/3">
+                  <div class="w-full border-b-2 border-gray-800 mx-auto mb-2"></div>
+                  <p class="text-[10px] sm:text-xs text-gray-600 uppercase tracking-wider font-bold">Instructor</p>
+                </div>
+                
+                <div class="flex flex-col items-center gap-2 w-1/3">
+                  <div class="flex gap-2 mb-2">
+                     <i data-lucide="shield-check" class="text-primary w-6 h-6"></i>
+                     <i data-lucide="award" class="text-[#D87D32] w-6 h-6"></i>
+                     <i data-lucide="globe" class="text-[#1a56db] w-6 h-6"></i>
+                  </div>
+                  <p class="text-[8px] sm:text-[10px] text-gray-800 font-bold uppercase hidden sm:block">SIYADNK SOFTWARE PVT LTD</p>
+                </div>
+
+                <div class="text-center w-1/3">
+                  <div class="w-full border-b-2 border-gray-800 mx-auto mb-2"></div>
+                  <p class="text-[10px] sm:text-xs text-gray-600 uppercase tracking-wider font-bold">Managing Director</p>
+                </div>
+              </div>
+
+               <div class="absolute -right-6 top-1/2 -translate-y-1/2 w-20 h-20 text-[#f59e0b] drop-shadow-md">
+                 <i data-lucide="award" class="w-20 h-20 drop-shadow-xl" fill="currentColor"></i>
+               </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+ 
+    <style>
+      .hide-scrollbar::-webkit-scrollbar { display: none; }
+      .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+ 
+ 
+  </main>
+  <!-- Footer -->
+  <footer class="bg-foreground text-primary-foreground py-12 border-t border-border">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+      
+      <!-- Brand & Description -->
+      <div class="space-y-4">
+        <div class="flex items-center gap-2 font-bold text-2xl">
+          <i data-lucide="flame" class="text-primary" style="width: 28px; height: 28px; stroke-width: 2.5;"></i>
+          <span class="font-extrabold tracking-wide text-white" style="font-family: Arial, sans-serif;">DNK SKILLS</span>
+        </div>
+        <p class="text-[15px] text-muted-foreground leading-relaxed mt-2">
+          Empowering the future through innovative education and technology solutions.
+        </p>
+      </div>
+
+      <!-- Training Programs -->
+      <div>
+        <h4 class="font-bold text-lg text-white mb-5">Training Programs</h4>
+        <ul class="space-y-3 text-[15px] text-muted-foreground">
+          <li><a href="../training/index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-4 h-4"></i> Web Development</a></li>
+          <li><a href="../training/index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-4 h-4"></i> App Development</a></li>
+          <li><a href="../training/index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-4 h-4"></i> Data Science</a></li>
+          <li><a href="../training/index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-4 h-4"></i> DSA with C++</a></li>
+          <li><a href="../training/index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-4 h-4"></i> DSA with Java</a></li>
+          <li><a href="../training/index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-4 h-4"></i> AI / ML</a></li>
+        </ul>
+      </div>
+
+      <!-- Courses -->
+      <div>
+        <h4 class="font-bold text-lg text-white mb-5">Courses</h4>
+        <ul class="space-y-3 text-[15px] text-muted-foreground">
+          <li><a href="index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-4 h-4"></i> C Programming</a></li>
+          <li><a href="index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-4 h-4"></i> C++ Programming</a></li>
+          <li><a href="index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-4 h-4"></i> Python Programming</a></li>
+          <li><a href="index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-4 h-4"></i> Java Programming</a></li>
+          <li><a href="index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-4 h-4"></i> JavaScript</a></li>
+          <li class="pt-2"><a href="index.html" class="text-primary hover:text-primary-foreground transition-colors flex items-center gap-2 font-semibold">View More <i data-lucide="arrow-right" class="w-4 h-4"></i></a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Us -->
+      <div>
+        <h4 class="font-bold text-lg text-white mb-5">Contact Us</h4>
+        <ul class="space-y-4 text-[15px] text-muted-foreground">
+          <li class="flex items-start gap-3">
+            <i data-lucide="map-pin" class="w-5 h-5 text-primary shrink-0 mt-0.5"></i>
+            <span>LPU, Jalandhar-Delhi, G.T. Road,<br>Phagwara, Punjab (INDIA)</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <i data-lucide="mail" class="w-5 h-5 text-primary shrink-0"></i>
+            <a href="mailto:support@dnkskill.com" class="hover:text-primary transition-colors opacity-90">support@dnkskill.com</a>
+          </li>
+          <li class="flex items-center gap-3">
+            <i data-lucide="phone" class="w-5 h-5 text-primary shrink-0"></i>
+            <a href="tel:8002318046" class="hover:text-primary transition-colors opacity-90">8002318046</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Map Embed -->
+      <div class="h-48 sm:h-full min-h-[180px] w-full rounded-xl overflow-hidden shadow-lg border border-primary-foreground/10">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3410.741036306353!2d75.70051!3d31.2536005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a5f5e9c489cf3%3A0x4049a5409d53c300!2sLovely%20Professional%20University!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="max-w-7xl mx-auto px-4 mt-12 pt-6 border-t border-primary-foreground/10">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
+        <div class="text-center md:text-left">
+          &copy; 2026 DNK SKILLS. All rights reserved.
+        </div>
+        <div class="font-bold text-center tracking-wider text-primary-foreground/80">
+          SIYADNK SOFTWARE PRIVATE LIMITED
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AOS Script Initialization -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
